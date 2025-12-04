@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj": {}
+    "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj": {
+    "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj",
-        "projectName": "NotenVerwaltung.Frontend",
-        "projectPath": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj",
+        "projectUniqueName": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj",
+        "projectName": "NotenVerwaltung.Backend",
+        "projectPath": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj",
         "packagesPath": "C:\\Users\\glebe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\obj\\",
+        "outputPath": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -55,26 +55,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Components.WebAssembly": {
+            "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[8.0.21, )"
-            },
-            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.21, )"
-            },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.21, )",
-              "autoReferenced": true
-            },
-            "Microsoft.NET.Sdk.WebAssembly.Pack": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.10, )",
-              "autoReferenced": true
+              "version": "[6.6.2, )"
             }
           },
           "imports": [
@@ -88,23 +71,15 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.21, 8.0.21]"
-            }
-          ],
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "browser-wasm": {
-          "#import": []
         }
       }
     },

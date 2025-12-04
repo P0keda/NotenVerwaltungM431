@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
