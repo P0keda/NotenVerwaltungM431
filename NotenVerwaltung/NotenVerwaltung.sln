@@ -5,6 +5,10 @@ VisualStudioVersion = 17.14.36603.0 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotenVerwaltung.Frontend", "NotenVerwaltung.Frontend\NotenVerwaltung.Frontend.csproj", "{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotenVerwaltung.Shared", "NotenVerwaltung.Shared\NotenVerwaltung.Shared.csproj", "{9D40B88F-6483-4B58-B411-D12ACC934CFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotenVerwaltung.Backend", "NotenVerwaltung.Backend\NotenVerwaltung.Backend.csproj", "{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D40B88F-6483-4B58-B411-D12ACC934CFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D40B88F-6483-4B58-B411-D12ACC934CFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D40B88F-6483-4B58-B411-D12ACC934CFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D40B88F-6483-4B58-B411-D12ACC934CFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
