@@ -1,0 +1,12 @@
+C:\Users\glebe\source\repos\P0keda\NotenVerwaltungM431\NotenVerwaltung\NotenVerwaltung.Shared\bin\Debug\net8.0\NotenVerwaltung.Shared.deps.json
+C:\Users\glebe\source\repos\P0keda\NotenVerwaltungM431\NotenVerwaltung\NotenVerwaltung.Shared\bin\Debug\net8.0\NotenVerwaltung.Shared.dll
+C:\Users\glebe\source\repos\P0keda\NotenVerwaltungM431\NotenVerwaltung\NotenVerwaltung.Shared\bin\Debug\net8.0\NotenVerwaltung.Shared.pdb
+C:\Users\glebe\source\repos\P0keda\NotenVerwaltungM431\NotenVerwaltung\NotenVerwaltung.Shared\obj\Debug\net8.0\NotenVerwaltung.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\glebe\source\repos\P0keda\NotenVerwaltungM431\NotenVerwaltung\NotenVerwaltung.Shared\obj\Debug\net8.0\NotenVerwaltung.Shared.AssemblyInfoInputs.cache
+C:\Users\glebe\source\repos\P0keda\NotenVerwaltungM431\NotenVerwaltung\NotenVerwaltung.Shared\obj\Debug\net8.0\NotenVerwaltung.Shared.AssemblyInfo.cs
+C:\Users\glebe\source\repos\P0keda\NotenVerwaltungM431\NotenVerwaltung\NotenVerwaltung.Shared\obj\Debug\net8.0\NotenVerwaltung.Shared.csproj.CoreCompileInputs.cache
+C:\Users\glebe\source\repos\P0keda\NotenVerwaltungM431\NotenVerwaltung\NotenVerwaltung.Shared\obj\Debug\net8.0\NotenVerwaltung.Shared.sourcelink.json
+C:\Users\glebe\source\repos\P0keda\NotenVerwaltungM431\NotenVerwaltung\NotenVerwaltung.Shared\obj\Debug\net8.0\NotenVerwaltung.Shared.dll
+C:\Users\glebe\source\repos\P0keda\NotenVerwaltungM431\NotenVerwaltung\NotenVerwaltung.Shared\obj\Debug\net8.0\refint\NotenVerwaltung.Shared.dll
+C:\Users\glebe\source\repos\P0keda\NotenVerwaltungM431\NotenVerwaltung\NotenVerwaltung.Shared\obj\Debug\net8.0\NotenVerwaltung.Shared.pdb
+C:\Users\glebe\source\repos\P0keda\NotenVerwaltungM431\NotenVerwaltung\NotenVerwaltung.Shared\obj\Debug\net8.0\ref\NotenVerwaltung.Shared.dll

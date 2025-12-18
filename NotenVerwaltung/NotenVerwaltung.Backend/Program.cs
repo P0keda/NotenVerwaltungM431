@@ -1,4 +1,8 @@
 
+using Microsoft.EntityFrameworkCore;
+using NotenVerwaltung.Backend.Repositories;
+using NotenVerwaltung.Backend.Services;
+
 namespace NotenVerwaltung.Backend
 {
     public class Program
@@ -14,7 +18,19 @@ namespace NotenVerwaltung.Backend
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+            builder.Services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+            });
+
+            builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
+            builder.Services.AddScoped<ITeacherService, TeacherService>();
+
             var app = builder.Build();
+
+
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
