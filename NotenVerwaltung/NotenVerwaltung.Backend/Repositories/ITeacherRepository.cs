@@ -4,5 +4,7 @@ namespace NotenVerwaltung.Backend.Repositories;
 
 public interface ITeacherRepository
 {
-    public List<Teacher> GetAll();
+    public List<Teacher> GetAllTeachers();
+
+    public Teacher GetTeacherById(int id);
 }

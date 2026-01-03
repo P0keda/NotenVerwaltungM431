@@ -27,7 +27,16 @@ namespace NotenVerwaltung.Backend
 
             builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
             builder.Services.AddScoped<ITeacherService, TeacherService>();
-
+            builder.Services.AddScoped<ISubjectService, SubjectService>();
+            builder.Services.AddScoped<ISubjectRepository, SubjectRepository>();
+            builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+            builder.Services.AddScoped<IStudentService, StudentService>();
+            builder.Services.AddScoped<IProrectorRepository, ProrectorRepository>();
+            builder.Services.AddScoped<IProrectorService, ProrectorService>();
+            builder.Services.AddScoped<IGradeRepository, GradeRepository>();
+            builder.Services.AddScoped<IGradeService, GradeService>();
+            builder.Services.AddScoped<IChangeRequestRepository, ChangeRequestRepository>();
+            builder.Services.AddScoped<IChangeRequestService, ChangeRequestService>();
             var app = builder.Build();
 
 

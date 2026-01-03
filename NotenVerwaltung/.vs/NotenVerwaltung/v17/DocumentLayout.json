@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\teacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\teacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\models\\changerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\models\\changerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\controllers\\changerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\controllers\\changerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.shared\\dtos\\changerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|solutionrelative:notenverwaltung.shared\\dtos\\changerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\changerequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\changerequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.shared\\dtos\\requeststatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|solutionrelative:notenverwaltung.shared\\dtos\\requeststatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\models\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\models\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\controllers\\gradecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\controllers\\gradecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.shared\\dtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|solutionrelative:notenverwaltung.shared\\dtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\wwwroot\\css\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\wwwroot\\css\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,28 +51,148 @@
       "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\services\\iteacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\services\\iteacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\controllers\\prorectorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\controllers\\prorectorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\services\\changerequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\services\\changerequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\services\\prorectorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\services\\prorectorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\services\\gradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\services\\gradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\graderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\graderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\igraderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\igraderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\services\\ichangerequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\services\\ichangerequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\ichangerequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\ichangerequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\services\\teacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\services\\teacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.shared\\dtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|solutionrelative:notenverwaltung.shared\\dtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\services\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\services\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\subjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\subjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\services\\igradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\services\\igradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\isubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\isubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.shared\\dtos\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|solutionrelative:notenverwaltung.shared\\dtos\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\prorectorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\prorectorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.shared\\dtos\\prorectordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|solutionrelative:notenverwaltung.shared\\dtos\\prorectordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\iteacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\iteacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\iprorectorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\iprorectorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.shared\\dtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|solutionrelative:notenverwaltung.shared\\dtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.shared\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D40B88F-6483-4B58-B411-D12ACC934CFD}|NotenVerwaltung.Shared\\NotenVerwaltung.Shared.csproj|solutionrelative:notenverwaltung.shared\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\services\\iprorectorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\services\\iprorectorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\models\\prorector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\models\\prorector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\services\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\services\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\services\\isubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\services\\isubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\repositories\\teacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\repositories\\teacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|c:\\users\\glebe\\source\\repos\\p0keda\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.backend\\services\\iteacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0715E1-8FAB-4C8F-A0C6-19A71A3E0EF7}|NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj|solutionrelative:notenverwaltung.backend\\services\\iteacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +202,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,59 +210,618 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Teacher.cs",
-              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Models\\Teacher.cs",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Models\\Teacher.cs",
-              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Models\\Teacher.cs",
-              "RelativeToolTip": "NotenVerwaltung.Backend\\Models\\Teacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAANAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "SubjectController.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Controllers\\SubjectController.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Controllers\\SubjectController.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Controllers\\SubjectController.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Controllers\\SubjectController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T14:51:53.543Z",
+              "WhenOpened": "2025-12-18T13:58:12.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TeacherController.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Controllers\\TeacherController.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Controllers\\TeacherController.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Controllers\\TeacherController.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Controllers\\TeacherController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T14:45:15.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Program.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Program.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Program.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwCYAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:02:58.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TeacherRepository.cs",
-              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\TeacherRepository.cs",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\TeacherRepository.cs",
-              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\TeacherRepository.cs",
-              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\TeacherRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "Title": "ChangeRequest.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Models\\ChangeRequest.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Models\\ChangeRequest.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Models\\ChangeRequest.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Models\\ChangeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T14:48:04.255Z",
+              "WhenOpened": "2026-01-03T19:01:26.107Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ITeacherRepository.cs",
-              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\ITeacherRepository.cs",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\ITeacherRepository.cs",
-              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\ITeacherRepository.cs",
-              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\ITeacherRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ChangeRequestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\ChangeRequestRepository.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\ChangeRequestRepository.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\ChangeRequestRepository.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\ChangeRequestRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T14:47:54.99Z",
+              "WhenOpened": "2026-01-03T19:02:04.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\AppDbContext.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T14:49:43.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GradeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\GradeRepository.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\GradeRepository.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\GradeRepository.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\GradeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T17:02:52.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChangeRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\ChangeRequestDTO.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Shared\\DTOs\\ChangeRequestDTO.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\ChangeRequestDTO.cs",
+              "RelativeToolTip": "NotenVerwaltung.Shared\\DTOs\\ChangeRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T19:03:02.985Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "RequestStatus.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\RequestStatus.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Shared\\DTOs\\RequestStatus.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\RequestStatus.cs",
+              "RelativeToolTip": "NotenVerwaltung.Shared\\DTOs\\RequestStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T21:08:42.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GradeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\GradeDTO.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Shared\\DTOs\\GradeDTO.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\GradeDTO.cs",
+              "RelativeToolTip": "NotenVerwaltung.Shared\\DTOs\\GradeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T17:03:57.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GradeController.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Controllers\\GradeController.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Controllers\\GradeController.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Controllers\\GradeController.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Controllers\\GradeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T17:02:15.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Grade.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Models\\Grade.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Models\\Grade.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Models\\Grade.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Models\\Grade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T17:01:18.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "bootstrap.min.css",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+              "RelativeToolTip": "NotenVerwaltung.Frontend\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAYAAACyEwAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-03T21:16:54.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChangeRequestController.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Controllers\\ChangeRequestController.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Controllers\\ChangeRequestController.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Controllers\\ChangeRequestController.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Controllers\\ChangeRequestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T19:01:09.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:26:14.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProrectorController.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Controllers\\ProrectorController.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Controllers\\ProrectorController.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Controllers\\ProrectorController.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Controllers\\ProrectorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T16:14:10.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProrectorService.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\ProrectorService.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Services\\ProrectorService.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\ProrectorService.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Services\\ProrectorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T16:15:13.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GradeService.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\GradeService.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Services\\GradeService.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\GradeService.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Services\\GradeService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowAgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T17:03:29.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IGradeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\IGradeRepository.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\IGradeRepository.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\IGradeRepository.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\IGradeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T17:02:31.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ChangeRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\ChangeRequestService.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Services\\ChangeRequestService.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\ChangeRequestService.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Services\\ChangeRequestService.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAswGEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T19:02:44.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IChangeRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\IChangeRequestService.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Services\\IChangeRequestService.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\IChangeRequestService.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Services\\IChangeRequestService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T19:02:27.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IChangeRequestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\IChangeRequestRepository.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\IChangeRequestRepository.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\IChangeRequestRepository.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\IChangeRequestRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T19:01:55.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\StudentRepository.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\StudentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:29:42.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SubjectService.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\SubjectService.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Services\\SubjectService.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\SubjectService.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Services\\SubjectService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T14:08:20.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IStudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\IStudentRepository.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\IStudentRepository.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\IStudentRepository.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\IStudentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:29:20.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IGradeService.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\IGradeService.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Services\\IGradeService.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\IGradeService.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Services\\IGradeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T17:03:12.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SubjectRepository.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\SubjectRepository.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\SubjectRepository.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\SubjectRepository.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\SubjectRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T14:03:43.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "TeacherService.cs",
               "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\TeacherService.cs",
               "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Services\\TeacherService.cs",
               "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\TeacherService.cs",
               "RelativeToolTip": "NotenVerwaltung.Backend\\Services\\TeacherService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-11T14:47:17.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 28,
+              "Title": "ISubjectRepository.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\ISubjectRepository.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\ISubjectRepository.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\ISubjectRepository.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\ISubjectRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T14:03:30.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ProrectorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\ProrectorRepository.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\ProrectorRepository.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\ProrectorRepository.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\ProrectorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T16:14:53.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Subject.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Models\\Subject.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Models\\Subject.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Models\\Subject.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Models\\Subject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T13:59:04.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SubjectDTO.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\SubjectDTO.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Shared\\DTOs\\SubjectDTO.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\SubjectDTO.cs",
+              "RelativeToolTip": "NotenVerwaltung.Shared\\DTOs\\SubjectDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T14:09:03.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ProrectorDTO.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\ProrectorDTO.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Shared\\DTOs\\ProrectorDTO.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\ProrectorDTO.cs",
+              "RelativeToolTip": "NotenVerwaltung.Shared\\DTOs\\ProrectorDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T16:15:23.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IProrectorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\IProrectorRepository.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\IProrectorRepository.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\IProrectorRepository.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\IProrectorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T16:14:43.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "StudentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\StudentDTO.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Shared\\DTOs\\StudentDTO.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\StudentDTO.cs",
+              "RelativeToolTip": "NotenVerwaltung.Shared\\DTOs\\StudentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:35:35.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "TeacherDTO.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\TeacherDTO.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Shared\\DTOs\\TeacherDTO.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\TeacherDTO.cs",
+              "RelativeToolTip": "NotenVerwaltung.Shared\\DTOs\\TeacherDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T13:14:50.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ITeacherRepository.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\ITeacherRepository.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\ITeacherRepository.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\ITeacherRepository.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\ITeacherRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T14:47:54.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Services\\StudentService.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\StudentService.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Services\\StudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:30:05.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Prorector.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Models\\Prorector.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Models\\Prorector.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Models\\Prorector.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Models\\Prorector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T16:14:20.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IProrectorService.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\IProrectorService.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Services\\IProrectorService.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\IProrectorService.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Services\\IProrectorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T16:15:03.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Models\\Student.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:28:44.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Models\\Teacher.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Models\\Teacher.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Models\\Teacher.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Models\\Teacher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T14:51:53.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\IStudentService.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Services\\IStudentService.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\IStudentService.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Services\\IStudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:29:56.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "TeacherRepository.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\TeacherRepository.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\TeacherRepository.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\TeacherRepository.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\TeacherRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T14:48:04.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ISubjectService.cs",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\ISubjectService.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Services\\ISubjectService.cs",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\ISubjectService.cs",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\Services\\ISubjectService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T14:08:11.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\appsettings.json",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-11T14:40:11.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\appsettings.Development.json",
+              "RelativeToolTip": "NotenVerwaltung.Backend\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-03T14:11:32.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
               "Title": "ITeacherService.cs",
               "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Services\\ITeacherService.cs",
               "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Services\\ITeacherService.cs",
@@ -118,72 +829,7 @@
               "RelativeToolTip": "NotenVerwaltung.Backend\\Services\\ITeacherService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T14:46:40.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TeacherController.cs",
-              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Controllers\\TeacherController.cs",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Controllers\\TeacherController.cs",
-              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Controllers\\TeacherController.cs",
-              "RelativeToolTip": "NotenVerwaltung.Backend\\Controllers\\TeacherController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAQwBUAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T14:45:15.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Program.cs",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Program.cs",
-              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Program.cs",
-              "RelativeToolTip": "NotenVerwaltung.Backend\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBwAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T15:02:58.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TeacherDTO.cs",
-              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\TeacherDTO.cs",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Shared\\DTOs\\TeacherDTO.cs",
-              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Shared\\DTOs\\TeacherDTO.cs",
-              "RelativeToolTip": "NotenVerwaltung.Shared\\DTOs\\TeacherDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T13:14:50.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\Repositories\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\Repositories\\AppDbContext.cs",
-              "RelativeToolTip": "NotenVerwaltung.Backend\\Repositories\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T14:49:43.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\appsettings.json",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Backend\\appsettings.json",
-              "ToolTip": "C:\\Users\\glebe\\source\\repos\\P0keda\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Backend\\appsettings.json",
-              "RelativeToolTip": "NotenVerwaltung.Backend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-11T14:40:11.288Z"
+              "WhenOpened": "2025-12-11T14:46:40.856Z"
             }
           ]
         }

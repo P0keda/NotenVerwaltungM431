@@ -14,7 +14,7 @@ public class TeacherService : ITeacherService
     }
     public List<TeacherDTO> GetAllTeachers()
     {
-        IEnumerable<Teacher> TeachersFromDb = _teacherRepository.GetAll();
+        IEnumerable<Teacher> TeachersFromDb = _teacherRepository.GetAllTeachers();
         List<TeacherDTO> TeachersToReturn = new List<TeacherDTO>();
 
         foreach (Teacher teacher in TeachersFromDb)
@@ -22,7 +22,7 @@ public class TeacherService : ITeacherService
             TeacherDTO teacherDTO = new TeacherDTO
             {
                 Id = teacher.Id,
-                Name = teacher.Name,
+                Name = teacher.FullName,
                 Email = teacher.Email,
                 Password = teacher.Password
             };

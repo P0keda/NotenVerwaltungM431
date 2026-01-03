@@ -9,10 +9,13 @@ public class TeacherRepository : ITeacherRepository
     {
         _context = context;
     }
-    public List<Teacher> GetAll()
+    public List<Teacher> GetAllTeachers()
     {
-        return _context.Teachers
-            .ToList();
+        return _context.Teachers.ToList();
     }
 
+    public Teacher GetTeacherById(int id)
+    {
+        return _context.Teachers.FirstOrDefault(t => t.Id == id);
+    }
 }

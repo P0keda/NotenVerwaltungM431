@@ -1,5 +1,105 @@
 [
   {
+    "ContainingType": "NotenVerwaltung.Backend.Controllers.ChangeRequestController",
+    "Method": "GetAllChangeRequests",
+    "RelativePath": "api/ChangeRequest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[NotenVerwaltung.Shared.DTOs.ChangeRequestDTO, NotenVerwaltung.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NotenVerwaltung.Backend.Controllers.GradeController",
+    "Method": "GetAllGrades",
+    "RelativePath": "api/Grade",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[NotenVerwaltung.Shared.DTOs.GradeDTO, NotenVerwaltung.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NotenVerwaltung.Backend.Controllers.ProrectorController",
+    "Method": "GetAllProrectors",
+    "RelativePath": "api/Prorector",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[NotenVerwaltung.Shared.DTOs.ProrectorDTO, NotenVerwaltung.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NotenVerwaltung.Backend.Controllers.StudentController",
+    "Method": "GetAllTeachers",
+    "RelativePath": "api/Student",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[NotenVerwaltung.Shared.DTOs.StudentDTO, NotenVerwaltung.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NotenVerwaltung.Backend.Controllers.SubjectController",
+    "Method": "GetAllTeachers",
+    "RelativePath": "api/Subject",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[NotenVerwaltung.Shared.DTOs.SubjectDTO, NotenVerwaltung.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "NotenVerwaltung.Backend.Controllers.TeacherController",
     "Method": "GetAllTeachers",
     "RelativePath": "api/Teacher",
