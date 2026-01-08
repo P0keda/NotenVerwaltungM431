@@ -1,0 +1,101 @@
+﻿@page "/"
+@using NotenVerwaltung.Frontend.Services
+@inject AuthService AuthService
+@inject NavigationManager Nav
+@inject LocalStorageService Storage   
+
+<div class="login-wrapper">
+    <div class="login-container">
+
+        <div class="login-header">
+            <div class="gibz-logo-text">GIBZ</div>
+            <h1>Zeugnis-Notenanpassung</h1>
+            <p>Bitte melden Sie sich an, um fortzufahren.</p>
+        </div>
+
+        <div class="login-card">
+
+            <EditForm Model="@loginModel" OnValidSubmit="HandleLogin">
+
+                @if (!string.IsNullOrEmpty(errorMessage))
+                {
+                    <div class="alert alert-danger text-center mb-3">
+                        @errorMessage
+                    </div>
+                }
+
+                <div class="form-group mb-3">
+                    <label class="form-label">E-Mail Adresse</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                        <InputText @bind-Value="loginModel.Email" class="form-control" placeholder="beispiel@gibz.ch" />
+                    </div>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label class="form-label">Passwort</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                        <InputText @bind-Value="loginModel.Password" type="password" class="form-control" placeholder="••••••••" />
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-gibz w-100 mb-3">
+                    Anmelden
+                </button>
+
+                <div class="text-center">
+                    <a href="/register" class="register-link">Jetzt registrieren</a>
+                </div>
+
+            </EditForm>
+        </div>
+
+        <footer class="login-footer">
+            &copy; 2024 - @DateTime.Now.Year Gewerblich-Industrielle Berufsschule Zug (GIBZ)<br />
+            <small>Version 1.0.4 - Notenanpassungssystem</small>
+        </footer>
+
+    </div>
+</div>
+
+@code {
+    private LoginModel loginModel = new();
+    private string? errorMessage;
+
+    private async Task HandleLogin()
+    {
+        errorMessage = null;
+
+        var savedUser = await Storage.GetItemAsync<StoredUser>("user");
+
+        if (savedUser == null)
+        {
+            errorMessage = "Es ist kein Benutzer registriert.";
+            return;
+        }
+
+        if (savedUser.Email == loginModel.Email &&
+            savedUser.Password == loginModel.Password)
+        {
+            Nav.NavigateTo("/requests");
+        }
+        else
+        {
+            errorMessage = "E-Mail oder Passwort ist ungültig.";
+        }
+    }
+
+    public class LoginModel
+    {
+        public string Email { get; set; } = "";
+        public string Password { get; set; } = "";
+    }
+
+    public class StoredUser
+    {
+        public string FullName { get; set; } = "";
+        public string Email { get; set; } = "";
+        public string Password { get; set; } = "";
+    }
+}

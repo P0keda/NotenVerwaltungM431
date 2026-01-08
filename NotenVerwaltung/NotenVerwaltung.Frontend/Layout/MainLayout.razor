@@ -1,16 +1,88 @@
 ﻿@inherits LayoutComponentBase
+@implements IDisposable
+@using NotenVerwaltung.Frontend.Services
+@inject AuthService AuthService
+@inject NavigationManager Nav
+
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+
+        <div class="gibz-header-bar shadow-sm d-flex justify-content-between align-items-center px-4 py-2">
+
+            <div class="header-left d-flex align-items-center gap-2"
+                 style="cursor:pointer"
+                 @onclick="NavigateToHome">
+
+                <div class="gibz-logo-box bg-primary text-white fw-bold px-2 py-1 rounded">
+                    GIBZ
+                </div>
+
+                <div class="school-name fw-semibold">
+                    Gewerblich-Industrielle Berufsschule Zug
+                </div>
+            </div>
+
+            @if (AuthService.IsAuthenticated)
+            {
+                <div class="header-right d-flex align-items-center gap-3">
+
+                    <span class="fw-semibold">
+                        @AuthService.CurrentUser.Name
+                    </span>
+
+                    <div class="user-avatar bg-secondary text-white rounded-circle d-flex justify-content-center align-items-center"
+                         style="width: 32px; height: 32px;">
+                        @AuthService.CurrentUser.Name.Substring(0, 2).ToUpper()
+                    </div>
+
+                    <button class="btn btn-link text-danger fw-semibold p-0"
+                            @onclick="HandleLogout">
+                        Abmelden
+                    </button>
+                </div>
+            }
         </div>
 
         <article class="content px-4">
             @Body
         </article>
+
     </main>
 </div>
+
+@code {
+    private void NavigateToHome()
+    {
+        if (AuthService.IsAuthenticated)
+            Nav.NavigateTo("/requests");
+        else
+            Nav.NavigateTo("/");
+    }
+
+    private async Task HandleLogout()
+    {
+        await AuthService.LogoutAsync();
+        Nav.NavigateTo("/", forceLoad: true);
+    }
+
+    protected override void OnInitialized()
+    {
+        AuthService.OnChange += StateHasChanged;
+        Nav.LocationChanged += (s, e) => StateHasChanged();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            StateHasChanged();
+        }
+    }
+
+    public void Dispose()
+    {
+        AuthService.OnChange -= StateHasChanged;
+        Nav.LocationChanged -= (s, e) => StateHasChanged();
+    }
+}

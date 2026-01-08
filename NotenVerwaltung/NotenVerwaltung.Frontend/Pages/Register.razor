@@ -1,0 +1,111 @@
+﻿@page "/register"
+@using System.ComponentModel.DataAnnotations
+@inject NavigationManager Nav
+@inject LocalStorageService Storage
+
+<div class="login-wrapper">
+    <div class="login-container">
+        <div class="login-header">
+            <div class="gibz-logo-text">GIBZ</div>
+            <h1>Erstellen Sie Ihr Konto</h1>
+            <p>Registrieren Sie sich für das Zeugnis-Notenanpassung System</p>
+        </div>
+
+        <div class="login-card">
+            <EditForm Model="@regModel" OnValidSubmit="HandleRegistration">
+                <DataAnnotationsValidator />
+
+                <div class="form-group mb-3">
+                    <label class="form-label">Vollständiger Name</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                        <InputText @bind-Value="regModel.FullName" class="form-control" placeholder="Vor- und Nachname" />
+                    </div>
+                    <ValidationMessage For="@(() => regModel.FullName)" class="text-danger small" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label">E-Mail-Adresse</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                        <InputText @bind-Value="regModel.Email" class="form-control" placeholder="beispiel@gibz.ch" />
+                    </div>
+                    <ValidationMessage For="@(() => regModel.Email)" class="text-danger small" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label">Passwort</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                        <InputText @bind-Value="regModel.Password" type="password" class="form-control" placeholder="Mindestens 6 Zeichen" />
+                    </div>
+                    <ValidationMessage For="@(() => regModel.Password)" class="text-danger small" />
+                </div>
+
+                <div class="form-group mb-4">
+                    <label class="form-label">Passwort bestätigen</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-shield-check"></i></span>
+                        <InputText @bind-Value="regModel.ConfirmPassword" type="password" class="form-control" placeholder="Passwort wiederholen" />
+                    </div>
+                    <ValidationMessage For="@(() => regModel.ConfirmPassword)" class="text-danger small" />
+                </div>
+
+                <button type="submit" class="btn btn-gibz w-100 mb-3">
+                    Registrieren
+                </button>
+
+                <div class="text-center">
+                    <a href="/login" class="register-link">Bereits registriert? Jetzt anmelden</a>
+                </div>
+            </EditForm>
+        </div>
+
+        <footer class="login-footer">
+            © 2025 GIBZ – Gewerblich-Industrielle Berufsschule Zug
+        </footer>
+    </div>
+</div>
+
+@code {
+    private RegisterViewModel regModel = new();
+
+    private async Task HandleRegistration()
+    {
+        var user = new StoredUser
+        {
+            FullName = regModel.FullName,
+            Email = regModel.Email,
+            Password = regModel.Password
+        };
+
+        await Storage.SetItemAsync("user", user);
+
+        Nav.NavigateTo("/");
+    }
+
+    public class StoredUser
+    {
+        public string FullName { get; set; } = "";
+        public string Email { get; set; } = "";
+        public string Password { get; set; } = "";
+    }
+
+    public class RegisterViewModel
+    {
+        [Required(ErrorMessage = "Der Name ist erforderlich.")]
+        public string FullName { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "E-Mail ist erforderlich.")]
+        [EmailAddress(ErrorMessage = "Ungültiges E-Mail-Format.")]
+        public string Email { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Passwort ist erforderlich.")]
+        [MinLength(6, ErrorMessage = "Das Passwort muss mindestens 6 Zeichen lang sein.")]
+        public string Password { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Bitte bestätigen Sie Ihr Passwort.")]
+        [Compare(nameof(Password), ErrorMessage = "Die Passwörter stimmen nicht überein.")]
+        public string ConfirmPassword { get; set; } = string.Empty;
+    }
+}

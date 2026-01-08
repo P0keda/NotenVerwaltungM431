@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using NotenVerwaltung.Frontend.Services;
 
 namespace NotenVerwaltung.Frontend
 {
@@ -11,9 +12,20 @@ namespace NotenVerwaltung.Frontend
             builder.RootComponents.Add<App>("#app");
             builder.RootComponents.Add<HeadOutlet>("head::after");
 
-            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services.AddScoped(sp => new HttpClient
+            {
+                BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
+            });
 
-            await builder.Build().RunAsync();
+            builder.Services.AddScoped<AuthService>();
+            builder.Services.AddScoped<MarkService>();
+            builder.Services.AddScoped<ITeacherService, TeacherService>();
+            builder.Services.AddScoped<LocalStorageService>();
+            var host = builder.Build();
+            AuthService auth = host.Services.GetRequiredService<AuthService>();
+            await auth.InitializeAsync();
+
+            await host.RunAsync();
         }
     }
 }

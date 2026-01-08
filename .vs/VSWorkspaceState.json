@@ -1,4 +1,12 @@
 {
-  "ExpandedNodes": [],
+  "ExpandedNodes": [
+    "",
+    "\\NotenVerwaltung",
+    "\\NotenVerwaltung\\NotenVerwaltung.Frontend",
+    "\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Layout",
+    "\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages",
+    "\\NotenVerwaltung\\NotenVerwaltung.Shared"
+  ],
+  "SelectedNode": "\\NotenVerwaltung\\NotenVerwaltung.Frontend\\_Imports.razor",
   "PreviewInSolutionExplorer": false
 }
