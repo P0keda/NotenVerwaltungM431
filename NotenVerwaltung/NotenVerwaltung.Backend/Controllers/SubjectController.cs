@@ -21,5 +21,11 @@ public class SubjectController : ControllerBase
     {
         return _subjectService.GetAllSubjects();
     }
+
+    [HttpGet("{id}")]
+    public ActionResult<SubjectDTO> GetSubjectById(int id)
+    {
+        return _subjectService.GetSubjectById(id);
+    }
 }
 

@@ -51,4 +51,36 @@ public class SubjectService : ISubjectService
         }
         return SubjectsToReturn;
     }
+
+    public SubjectDTO GetSubjectById(int id)
+    {
+        Subject Subject = _subjectRepository.GetSubjectById(id);
+        Teacher Teacher = _teacherRepository.GetTeacherById(Subject.TeacherId);
+        Prorector Prorector = _prorectorRepository.GetProrectorById(Subject.ProrectorId);
+
+        SubjectDTO SubjectDTO = new SubjectDTO
+        {
+                Id = Subject.Id,
+                SubjectName = Subject.SubjectName,
+                TeacherId = Subject.TeacherId,
+                Teacher = new TeacherDTO
+                {
+                    Id = Subject.TeacherId,
+                    Name = Teacher.FullName,
+                    Email = Teacher.Email,
+                    Password = Teacher.Password
+                },
+                ProrectorId = Subject.ProrectorId,
+                Prorector = new ProrectorDTO
+                {
+                    Id = Subject.Id,
+                    Email = Prorector.Email,
+                    Department = Prorector.Department,
+                    Name = Prorector.fullName,
+                    Password = Prorector.Password
+                }
+        };
+
+        return SubjectDTO;
+    }
 }

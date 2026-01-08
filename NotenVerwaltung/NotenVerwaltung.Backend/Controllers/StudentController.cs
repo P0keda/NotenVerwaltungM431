@@ -16,8 +16,14 @@ public class StudentController : ControllerBase
     }
 
     [HttpGet]
-    public ActionResult<List<StudentDTO>> GetAllTeachers()
+    public ActionResult<List<StudentDTO>> GetAllStudent()
     {
         return _studentService.GetAllStudents();
+    }
+
+    [HttpGet("{id}")]
+    public ActionResult<StudentDTO> GetAllStudents(int id)
+    {
+        return _studentService.GetStudentById(id);
     }
 }

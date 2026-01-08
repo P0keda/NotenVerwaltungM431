@@ -7,4 +7,6 @@ public interface ITeacherRepository
     public List<Teacher> GetAllTeachers();
 
     public Teacher GetTeacherById(int id);
+
+    public Teacher GetTeacherByEmail(string email);
 }

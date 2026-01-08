@@ -18,4 +18,14 @@ public class GradeRepository : IGradeRepository
     {
         return _context.Grades.FirstOrDefault(g => g.Id == id);
     }
+
+    public List<Grade> GetGradeByStudentId(int id)
+    {
+        return _context.Grades.Where(g => g.StudentId == id).ToList();
+    }
+
+    public List<Grade> GetGradeByStudentIdAndSubject(int StudentId, int subjectId)
+    {
+        return _context.Grades.Where(g => g.StudentId == StudentId && g.SubjectId == subjectId).ToList();
+    }
 }

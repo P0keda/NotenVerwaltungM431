@@ -13,9 +13,12 @@ public class ProrectorRepository : IProrectorRepository
     {
         return _context.Prorectors.ToList();
     }
-
     public Prorector GetProrectorById(int id)
     {
         return _context.Prorectors.FirstOrDefault(p => p.Id == id);
+    }
+    public Prorector GetProrectorByEmail(string email)
+    {
+        return _context.Prorectors.FirstOrDefault(p => p.Email == email);
     }
 }

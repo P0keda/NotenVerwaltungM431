@@ -12,11 +12,13 @@ public class ChangeRequestService : IChangeRequestService
     private readonly ISubjectRepository _subjectRepository;
     private readonly IProrectorRepository _prorectorRepository;
     private readonly IStudentRepository _studentReposiory;
+    private readonly IGradeService _gradeService;
 
     private readonly IGradeRepository _gradeRepository;
 
-    public ChangeRequestService(IChangeRequestRepository changeRequestRepository, ITeacherRepository teacherRepository,ISubjectRepository subjectRepository, IStudentRepository studentRepository, IProrectorRepository prorectorRepository, IGradeRepository gradeRepository)
+    public ChangeRequestService(IGradeService gradeService, IChangeRequestRepository changeRequestRepository, ITeacherRepository teacherRepository,ISubjectRepository subjectRepository, IStudentRepository studentRepository, IProrectorRepository prorectorRepository, IGradeRepository gradeRepository)
     {
+        _gradeService = gradeService;
         _changeRequestRepository = changeRequestRepository;
         _subjectRepository = subjectRepository;
         _studentReposiory = studentRepository;
@@ -40,7 +42,6 @@ public class ChangeRequestService : IChangeRequestService
             ChangeRequestDTO changeRequestDTO = new ChangeRequestDTO
             {
                 Id = changeRequest.Id,
-                TeacherId = teacher.Id,
                 Teacher = new TeacherDTO
                 {
                     Id = teacher.Id,
@@ -48,37 +49,7 @@ public class ChangeRequestService : IChangeRequestService
                     Email = teacher.Email,
                     Password = teacher.Password
                 },
-                GradeId = grade.Id,
-                Grade = new GradeDTO
-                {
-                    Id = grade.Id,
-                    Date = grade.GradeDate,
-                    Comment = grade.Comment,
-                    GradeValue = grade.GradeValue,
-                    StudentId = student.Id,
-                    Student = new StudentDTO
-                    {
-                        Id = student.Id,
-                        Class = student.className,
-                        Name = student.fullName
-                    },
-                    SubjectId = subject.Id,
-                    Subject = new SubjectDTO
-                    {
-                        Id = subject.Id,
-                        SubjectName = subject.SubjectName,
-                        ProrectorId = prorector.Id,
-                        Prorector = new ProrectorDTO
-                        {
-                            Id = prorector.Id,
-                            Email = prorector.Email,
-                            Department = prorector.Department,
-                            Name = prorector.fullName,
-                            Password = prorector.Password
-                        }
-                    },
-                },
-                ProrectorId = changeRequest.ProrectorId,
+                Grade = _gradeService.GetGradeById(grade.Id),
                 Prorector = new ProrectorDTO
                 {
                     Id = prorector.Id,

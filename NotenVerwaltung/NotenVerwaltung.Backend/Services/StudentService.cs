@@ -21,14 +21,23 @@ public class StudentService : IStudentService
 
         foreach (Student student in students)
         {
-            StudentDTO studentDTO = new StudentDTO
-            {
-                Id = student.Id,
-                Name = student.fullName,
-                Class = student.className
-            };
+            StudentDTO studentDTO = GetStudentById(student.Id);
             StudentsToReturn.Add(studentDTO);
         }
         return StudentsToReturn;
+    }
+
+    public StudentDTO GetStudentById(int id)
+    {
+        Student student = _studentRepository.GetStudentById(id);
+
+        StudentDTO studentDTO = new StudentDTO
+        {
+                Id = student.Id,
+                Name = student.fullName,
+                Class = student.className
+        };
+
+        return studentDTO;
     }
 }

@@ -22,11 +22,21 @@ public class GradeService : IGradeService
     }
     public List<GradeDTO> GetAllGrades()
     {
-        IEnumerable<Grade> GradesRepository = _gradeRepository.GetAllGrades();
+        List<Grade> GradesRepository = _gradeRepository.GetAllGrades();
         List<GradeDTO> GradesToReturn = new List<GradeDTO>();
 
         foreach (Grade grade in GradesRepository)
         {
+            GradeDTO gradeDTO = GetGradeById(grade.Id);
+            GradesToReturn.Add(gradeDTO);
+        }
+        return GradesToReturn;
+    }
+
+    public GradeDTO GetGradeById(int id)
+    {
+        Grade grade = _gradeRepository.GetGradeById(id);
+
             Teacher teacher = _teacherRepository.GetTeacherById(grade.TeacherId);
             Student student = _studentReposiory.GetStudentById(grade.StudentId);
             Subject subject = _subjectRepository.GetSubjectById(grade.SubjectId);
@@ -68,6 +78,30 @@ public class GradeService : IGradeService
                     }
                 },
             };
+        return gradeDTO;
+    }
+
+    public List<GradeDTO> GetGradeByStudentId(int id)
+    {
+        List<Grade> GradesRepository = _gradeRepository.GetGradeByStudentId(id);
+        List<GradeDTO> GradesToReturn = new List<GradeDTO>();
+
+        foreach (Grade grade in GradesRepository)
+        {
+            GradeDTO gradeDTO = GetGradeById(grade.Id);
+            GradesToReturn.Add(gradeDTO);
+        }
+        return GradesToReturn;
+    }
+
+    public List<GradeDTO> GetGradeByStudentIdAndSubjectId(int studentId, int SubjectId)
+    {
+        List<Grade> GradesRepository = _gradeRepository.GetGradeByStudentIdAndSubject(studentId, SubjectId);
+        List<GradeDTO> GradesToReturn = new List<GradeDTO>();
+
+        foreach (Grade grade in GradesRepository)
+        {
+            GradeDTO gradeDTO = GetGradeById(grade.Id);
             GradesToReturn.Add(gradeDTO);
         }
         return GradesToReturn;

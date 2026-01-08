@@ -20,4 +20,15 @@ public class ProrectorController : ControllerBase
     {
         return _prorectorService.GetAllProrectors();
     }
+    [HttpGet("{id}")]
+    public ActionResult<ProrectorDTO> GetProrectorById(int id)
+    {
+        return _prorectorService.GetProrectorById(id);
+    }
+
+    [HttpGet("{email}")]
+    public ActionResult<ProrectorDTO> GetProrectorByEmail(string email)
+    {
+        return _prorectorService.GetProrectorByEmail(email);
+    }
 }

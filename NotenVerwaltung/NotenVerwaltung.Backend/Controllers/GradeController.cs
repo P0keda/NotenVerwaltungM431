@@ -20,4 +20,21 @@ public class GradeController : ControllerBase
     {
         return _gradeService.GetAllGrades();
     }
+    [HttpGet("{id}")]
+    public ActionResult<GradeDTO> GetGradeById(int id)
+    {
+        return _gradeService.GetGradeById(id);
+    }
+
+    [HttpGet("{studentId}")]
+    public ActionResult<List<GradeDTO>> GetGradeByStudentId(int studentId)
+    {
+        return _gradeService.GetGradeByStudentId(studentId);
+    }
+
+    [HttpGet("{studentId}")]
+    public ActionResult<List<GradeDTO>> GetGradeByStudentIdAndSubjectID(int studentId, int subjectId)
+    {
+        return _gradeService.GetGradeByStudentIdAndSubjectId(studentId, subjectId);
+    }
 }

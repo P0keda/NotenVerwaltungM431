@@ -21,4 +21,10 @@ public class TeacherController : ControllerBase
     {
         return _teacherService.GetAllTeachers();
     }
+
+    [HttpGet("{id}")]
+    public ActionResult<TeacherDTO> GetTeacherById(int id)
+    {
+        return _teacherService.GetTeacherById(id);
+    }
 }

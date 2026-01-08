@@ -18,4 +18,9 @@ public class TeacherRepository : ITeacherRepository
     {
         return _context.Teachers.FirstOrDefault(t => t.Id == id);
     }
+
+    public Teacher GetTeacherByEmail(string email)
+    {
+        return _context.Teachers.FirstOrDefault(t => t.Email == email);
+    }
 }
