@@ -28,6 +28,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Desktop/GIBZ/m431/Notenverwaltung/NotenVerwaltungM431/NotenVerwaltung/NotenVerwaltung.Frontend/Pages/CreateRequests.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlUmVxdWVzdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Desktop/GIBZ/m431/Notenverwaltung/NotenVerwaltungM431/NotenVerwaltung/NotenVerwaltung.Frontend/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

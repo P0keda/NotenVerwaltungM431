@@ -1,5 +1,4 @@
 ﻿@inherits LayoutComponentBase
-@implements IDisposable
 @using NotenVerwaltung.Frontend.Services
 @inject AuthService AuthService
 @inject NavigationManager Nav
@@ -76,7 +75,7 @@
     {
         if (firstRender)
         {
-            StateHasChanged();
+             StateHasChanged();
         }
     }
 

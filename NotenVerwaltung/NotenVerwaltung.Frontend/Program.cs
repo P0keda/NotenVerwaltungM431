@@ -18,12 +18,18 @@ namespace NotenVerwaltung.Frontend
             });
 
             builder.Services.AddScoped<AuthService>();
+            builder.Services.AddScoped<LocalStorageService>();
+            builder.Services.AddScoped<RequestService>();
             builder.Services.AddScoped<MarkService>();
             builder.Services.AddScoped<ITeacherService, TeacherService>();
-            builder.Services.AddScoped<LocalStorageService>();
+
             var host = builder.Build();
-            AuthService auth = host.Services.GetRequiredService<AuthService>();
+
+            var auth = host.Services.GetRequiredService<AuthService>();
             await auth.InitializeAsync();
+
+            var req = host.Services.GetRequiredService<RequestService>();
+            await req.InitializeAsync();
 
             await host.RunAsync();
         }

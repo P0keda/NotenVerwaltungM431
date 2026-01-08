@@ -1,0 +1,108 @@
+﻿@page "/createRequests"
+@using NotenVerwaltung.Frontend.Models
+@inject NavigationManager Nav
+@inject RequestService RequestService
+@using System.ComponentModel.DataAnnotations
+
+<div class="container mt-4 mb-5">
+
+    <h2 class="mb-2 fw-bold text-primary">Neuer Antrag</h2>
+    <p class="mb-4 text-muted">Antrag zur Anpassung einer Zeugnisnote</p>
+
+    <EditForm Model="@request" OnValidSubmit="HandleSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="d-flex flex-column gap-4">
+
+            <div>
+                <label class="form-label">Name der Lehrkraft</label>
+                <InputText class="form-control" @bind-Value="request.TeacherName" />
+                <ValidationMessage For="@(() => request.TeacherName)" />
+            </div>
+
+            <div>
+                <label class="form-label">Name des Schülers / der Schülerin</label>
+                <InputText class="form-control" @bind-Value="request.StudentName" />
+                <ValidationMessage For="@(() => request.StudentName)" />
+            </div>
+
+            <div>
+                <label class="form-label">Name des Prorektors / der Prorektorin</label>
+                <InputText class="form-control" @bind-Value="request.ProrectorName" />
+                <ValidationMessage For="@(() => request.ProrectorName)" />
+            </div>
+
+            <div>
+                <label class="form-label">Fach</label>
+                <InputText class="form-control" @bind-Value="request.Subject" />
+                <ValidationMessage For="@(() => request.Subject)" />
+            </div>
+
+            <!-- Noten nebeneinander -->
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label">Aktuelle Note</label>
+                    <InputSelect class="form-select" @bind-Value="request.CurrentGrade">
+                        <option value="">Auswählen</option>
+                        @foreach (var grade in Grades)
+                        {
+                            <option value="@grade">@grade</option>
+                        }
+                    </InputSelect>
+                    <ValidationMessage For="@(() => request.CurrentGrade)" />
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Beantragte Note</label>
+                    <InputSelect class="form-select" @bind-Value="request.RequestedGrade">
+                        <option value="">Auswählen</option>
+                        @foreach (var grade in Grades)
+                        {
+                            <option value="@grade">@grade</option>
+                        }
+                    </InputSelect>
+                    <ValidationMessage For="@(() => request.RequestedGrade)" />
+                </div>
+            </div>
+
+            <div>
+                <label class="form-label">Begründung</label>
+                <InputTextArea class="form-control" rows="4" @bind-Value="request.Justification" />
+                <ValidationMessage For="@(() => request.Justification)" />
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-outline-secondary" @onclick="GoBack">
+                    ← Zurück zum Dashboard
+                </button>
+
+                <button type="submit" class="btn btn-primary">
+                    Antrag senden
+                </button>
+            </div>
+        </div>
+    </EditForm>
+</div>
+
+@code {
+    private RequestModel request = new();
+
+    private List<string> Grades = new() { "1", "2", "3", "4", "5", "6" };
+
+    private void GoBack()
+    {
+        Nav.NavigateTo("/dashboard");
+    }
+
+    private async Task HandleSubmit()
+    {
+        request.Status = "Pending";
+        request.CreatedAt = DateTime.Now;
+
+        await RequestService.AddRequest(request);
+
+        Nav.NavigateTo("/requests");
+    }
+}
