@@ -84,13 +84,6 @@
         Nav.NavigateTo("/");
     }
 
-    public class StoredUser
-    {
-        public string FullName { get; set; } = "";
-        public string Email { get; set; } = "";
-        public string Password { get; set; } = "";
-    }
-
     public class RegisterViewModel
     {
         [Required(ErrorMessage = "Der Name ist erforderlich.")]
@@ -98,7 +91,10 @@
 
         [Required(ErrorMessage = "E-Mail ist erforderlich.")]
         [EmailAddress(ErrorMessage = "Ungültiges E-Mail-Format.")]
+        [RegularExpression(@"^[^@\s]+@gibz\.ch$",
+            ErrorMessage = "Nur E-Mail-Adressen mit @gibz.ch sind erlaubt.")]
         public string Email { get; set; } = string.Empty;
+
 
         [Required(ErrorMessage = "Passwort ist erforderlich.")]
         [MinLength(6, ErrorMessage = "Das Passwort muss mindestens 6 Zeichen lang sein.")]

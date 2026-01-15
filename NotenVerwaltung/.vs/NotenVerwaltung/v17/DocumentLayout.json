@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\pages\\requestdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\pages\\requestdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\pages\\createrequests.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\pages\\createrequests.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\pages\\requestdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\pages\\requestdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\models\\storeduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\models\\storeduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\models\\requestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\models\\requestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\services\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\services\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -35,6 +47,14 @@
       "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\pages\\createrequests.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\pages\\createrequests.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\services\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\services\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -43,28 +63,12 @@
       "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\wwwroot\\css\\gibz.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\services\\localstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\services\\localstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|solutionrelative:notenverwaltung.frontend\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFFDDF69-4768-431B-A1AE-51AC4E863FAF}|NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj|c:\\desktop\\gibz\\m431\\notenverwaltung\\notenverwaltungm431\\notenverwaltung\\notenverwaltung.frontend\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -98,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,20 +138,110 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateRequests.razor",
-              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages\\CreateRequests.razor",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Pages\\CreateRequests.razor",
-              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages\\CreateRequests.razor",
-              "RelativeToolTip": "NotenVerwaltung.Frontend\\Pages\\CreateRequests.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-08T14:53:43.666Z",
+              "DocumentIndex": 3,
+              "Title": "StoredUser.cs",
+              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Models\\StoredUser.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Models\\StoredUser.cs",
+              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Models\\StoredUser.cs",
+              "RelativeToolTip": "NotenVerwaltung.Frontend\\Models\\StoredUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T14:10:35.216Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Program.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Program.cs",
+              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Program.cs",
+              "RelativeToolTip": "NotenVerwaltung.Frontend\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowAsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T18:54:07.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RequestDashboard.razor",
+              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages\\RequestDashboard.razor",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Pages\\RequestDashboard.razor",
+              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages\\RequestDashboard.razor",
+              "RelativeToolTip": "NotenVerwaltung.Frontend\\Pages\\RequestDashboard.razor",
+              "ViewState": "AgIAACEAAAAAAAAAAAArwDUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T10:35:34.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "NotenVerwaltung.Frontend\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAADYAAAAAAAAAAAAuwEcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-01T18:46:00.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\wwwroot\\index.html",
+              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\wwwroot\\index.html",
+              "RelativeToolTip": "NotenVerwaltung.Frontend\\wwwroot\\index.html",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-01T18:44:52.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "NotenVerwaltung.Frontend\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAACgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-01T19:02:59.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "NotenVerwaltung.Frontend\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAqwF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-08T10:22:58.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "NotenVerwaltung.Frontend\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-01T18:58:22.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "RequestModel.cs",
               "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Models\\RequestModel.cs",
               "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Models\\RequestModel.cs",
@@ -161,106 +255,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "RequestService.cs",
-              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Services\\RequestService.cs",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Services\\RequestService.cs",
-              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Services\\RequestService.cs",
-              "RelativeToolTip": "NotenVerwaltung.Frontend\\Services\\RequestService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T15:07:00.595Z",
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Pages\\Login.razor",
+              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages\\Login.razor",
+              "RelativeToolTip": "NotenVerwaltung.Frontend\\Pages\\Login.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T09:49:28.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Register.razor",
               "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages\\Register.razor",
               "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Pages\\Register.razor",
               "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages\\Register.razor",
               "RelativeToolTip": "NotenVerwaltung.Frontend\\Pages\\Register.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAArwEoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-08T09:50:00.661Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Program.cs",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Program.cs",
-              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Program.cs",
-              "RelativeToolTip": "NotenVerwaltung.Frontend\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAowBAAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T18:54:07.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RequestDashboard.razor",
-              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages\\RequestDashboard.razor",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Pages\\RequestDashboard.razor",
-              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages\\RequestDashboard.razor",
-              "RelativeToolTip": "NotenVerwaltung.Frontend\\Pages\\RequestDashboard.razor",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-08T10:35:34.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "gibz.css",
-              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\wwwroot\\css\\gibz.css",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\wwwroot\\css\\gibz.css",
-              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\wwwroot\\css\\gibz.css",
-              "RelativeToolTip": "NotenVerwaltung.Frontend\\wwwroot\\css\\gibz.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-01-08T09:50:31.834Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "NotenVerwaltung.Frontend\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAADYAAAAAAAAAAAAuwEsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-01T18:46:00.855Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\_Imports.razor",
               "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\_Imports.razor",
               "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\_Imports.razor",
               "RelativeToolTip": "NotenVerwaltung.Frontend\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-01T18:45:12.405Z"
+              "WhenOpened": "2026-01-01T18:45:12.405Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "NotenVerwaltung.Frontend\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-01T19:02:59.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Services\\AuthService.cs",
@@ -272,31 +305,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "app.css",
-              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\wwwroot\\css\\app.css",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\wwwroot\\css\\app.css",
-              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\wwwroot\\css\\app.css",
-              "RelativeToolTip": "NotenVerwaltung.Frontend\\wwwroot\\css\\app.css",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAqwF4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-01-08T10:22:58.694Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Login.razor",
-              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages\\Login.razor",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Pages\\Login.razor",
-              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages\\Login.razor",
-              "RelativeToolTip": "NotenVerwaltung.Frontend\\Pages\\Login.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-08T09:49:28.825Z"
+              "Title": "RequestService.cs",
+              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Services\\RequestService.cs",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Services\\RequestService.cs",
+              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Services\\RequestService.cs",
+              "RelativeToolTip": "NotenVerwaltung.Frontend\\Services\\RequestService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T15:07:00.595Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
+              "Title": "gibz.css",
+              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\wwwroot\\css\\gibz.css",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\wwwroot\\css\\gibz.css",
+              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\wwwroot\\css\\gibz.css",
+              "RelativeToolTip": "NotenVerwaltung.Frontend\\wwwroot\\css\\gibz.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-08T09:50:31.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateRequests.razor",
+              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages\\CreateRequests.razor",
+              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Pages\\CreateRequests.razor",
+              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Pages\\CreateRequests.razor",
+              "RelativeToolTip": "NotenVerwaltung.Frontend\\Pages\\CreateRequests.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T14:53:43.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "LocalStorageService.cs",
               "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Services\\LocalStorageService.cs",
               "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Services\\LocalStorageService.cs",
@@ -308,19 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Properties\\launchSettings.json",
-              "RelativeToolTip": "NotenVerwaltung.Frontend\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-01T18:58:22.212Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "TeacherService.cs",
               "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Services\\TeacherService.cs",
               "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Services\\TeacherService.cs",
@@ -332,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\App.razor",
               "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\App.razor",
@@ -344,19 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\wwwroot\\index.html",
-              "ToolTip": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\wwwroot\\index.html",
-              "RelativeToolTip": "NotenVerwaltung.Frontend\\wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-01-01T18:44:52.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ITeacherService.cs",
               "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Services\\ITeacherService.cs",
               "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Services\\ITeacherService.cs",
@@ -368,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "MarkService.cs",
               "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\Services\\MarkService.cs",
               "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\Services\\MarkService.cs",
@@ -380,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "MarkAdjustmentDTO.cs",
               "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\DTOs\\MarkAdjustmentDTO.cs",
               "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\DTOs\\MarkAdjustmentDTO.cs",
@@ -392,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "TeacherDTO.cs",
               "DocumentMoniker": "C:\\Desktop\\GIBZ\\m431\\Notenverwaltung\\NotenVerwaltungM431\\NotenVerwaltung\\NotenVerwaltung.Frontend\\DTOs\\TeacherDTO.cs",
               "RelativeDocumentMoniker": "NotenVerwaltung.Frontend\\DTOs\\TeacherDTO.cs",
