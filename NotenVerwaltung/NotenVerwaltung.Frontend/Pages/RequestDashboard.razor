@@ -1,0 +1,66 @@
+﻿@page "/requests"
+@inject NavigationManager Nav
+@inject LocalStorageService Storage
+
+<div class="dashboard-container px-4 py-3">
+    <h2 class="mb-4">Übersicht Ihrer Notenänderungsanträge</h2>
+
+    <div class="status-summary d-flex flex-wrap gap-3 mb-4">
+
+        <div class="status-card status-total flex-fill text-center">
+            <h5>Gesamt</h5>
+            <p class="fs-4 fw-bold">0</p>
+        </div>
+
+        <div class="status-card status-pending flex-fill text-center">
+            <h5>Ausstehend</h5>
+            <p class="fs-4 fw-bold">0</p>
+        </div>
+
+        <div class="status-card status-approved flex-fill text-center">
+            <h5>Genehmigt</h5>
+            <p class="fs-4 fw-bold">0</p>
+        </div>
+
+        <div class="status-card status-rejected flex-fill text-center">
+            <h5>Abgelehnt</h5>
+            <p class="fs-4 fw-bold">0</p>
+        </div>
+
+    </div>
+
+    <div class="d-flex justify-content-end mb-3">
+        <button class="btn btn-primary" @onclick="NeuerAntrag">
+            + Neuer Antrag
+        </button>
+    </div>
+
+    <div class="antragsliste bg-white border rounded p-4">
+        <h4 class="mb-3">Alle Anträge</h4>
+        <div class="text-muted">
+            Noch keine Anträge vorhanden. Erstellen Sie Ihren ersten Antrag mit dem Button oben.
+        </div>
+    </div>
+
+    <footer class="text-center mt-5 text-muted small">
+        © 2025 GIBZ – Gewerblich-Industrielle Berufsschule Zug ·
+        <a href="https://gibz.ch">gibz.ch</a>
+    </footer>
+</div>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var user = await Storage.GetItemAsync<StoredUser>("user");
+
+        if (user == null)
+        {
+            Nav.NavigateTo("/", true);
+        }
+    }
+
+    private void NeuerAntrag()
+    {
+        Nav.NavigateTo("/createRequests");
+    }
+}

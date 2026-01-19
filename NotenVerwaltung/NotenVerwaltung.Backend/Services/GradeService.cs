@@ -106,4 +106,18 @@ public class GradeService : IGradeService
         }
         return GradesToReturn;
     }
+
+    public GradeDTO UpdateGrade(UpdateGradeDTO updateGradeDTO, int id)
+    {
+        Grade grade = _gradeRepository.GetGradeById(id);
+        if (grade == null)
+        {
+            return null;
+        }
+        grade.GradeValue = updateGradeDTO.GradeValue;
+        grade.Comment = updateGradeDTO.Comment;
+        _gradeRepository.UpdateGrade(grade, id);
+        GradeDTO gradeDTO = GetGradeById(grade.Id);
+        return gradeDTO;
+    }
 }

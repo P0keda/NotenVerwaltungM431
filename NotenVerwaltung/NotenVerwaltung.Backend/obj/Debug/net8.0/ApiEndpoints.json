@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "NotenVerwaltung.Backend.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginUserDTO",
+        "Type": "NotenVerwaltung.Shared.DTOs.LoginUserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NotenVerwaltung.Backend.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerUserDTO",
+        "Type": "NotenVerwaltung.Shared.DTOs.RegisterUserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NotenVerwaltung.Backend.Controllers.ChangeRequestController",
     "Method": "GetAllChangeRequests",
     "RelativePath": "api/ChangeRequest",
@@ -10,6 +42,89 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[NotenVerwaltung.Shared.DTOs.ChangeRequestDTO, NotenVerwaltung.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NotenVerwaltung.Backend.Controllers.ChangeRequestController",
+    "Method": "CreateChangeRequest",
+    "RelativePath": "api/ChangeRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createChangeRequest",
+        "Type": "NotenVerwaltung.Shared.DTOs.CreateChangeRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NotenVerwaltung.Shared.DTOs.ChangeRequestDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NotenVerwaltung.Backend.Controllers.ChangeRequestController",
+    "Method": "GetChangeRequestById",
+    "RelativePath": "api/ChangeRequest/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NotenVerwaltung.Shared.DTOs.ChangeRequestDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NotenVerwaltung.Backend.Controllers.ChangeRequestController",
+    "Method": "UpdateChangeRequest",
+    "RelativePath": "api/ChangeRequest/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateChangeRequest",
+        "Type": "NotenVerwaltung.Shared.DTOs.UpdateChangeRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NotenVerwaltung.Shared.DTOs.ChangeRequestDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -67,34 +182,29 @@
   },
   {
     "ContainingType": "NotenVerwaltung.Backend.Controllers.GradeController",
-    "Method": "GetGradeByStudentId",
-    "RelativePath": "api/Grade/{studentId}",
-    "HttpMethod": "GET",
+    "Method": "UpdateGrade",
+    "RelativePath": "api/Grade/{id}",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "studentId",
+        "Name": "updateGradeDTO",
+        "Type": "NotenVerwaltung.Shared.DTOs.UpdateGradeDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[NotenVerwaltung.Shared.DTOs.GradeDTO, NotenVerwaltung.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "NotenVerwaltung.Backend.Controllers.GradeController",
-    "Method": "GetGradeByStudentIdAndSubjectID",
-    "RelativePath": "api/Grade/{studentId}",
+    "Method": "GetGradeByStudentId",
+    "RelativePath": "api/Grade/student/{studentId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -103,11 +213,6 @@
         "Name": "studentId",
         "Type": "System.Int32",
         "IsRequired": true
-      },
-      {
-        "Name": "subjectId",
-        "Type": "System.Int32",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -144,15 +249,15 @@
   },
   {
     "ContainingType": "NotenVerwaltung.Backend.Controllers.ProrectorController",
-    "Method": "GetProrectorByEmail",
-    "RelativePath": "api/Prorector/{email}",
+    "Method": "GetProrectorById",
+    "RelativePath": "api/Prorector/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -170,15 +275,15 @@
   },
   {
     "ContainingType": "NotenVerwaltung.Backend.Controllers.ProrectorController",
-    "Method": "GetProrectorById",
-    "RelativePath": "api/Prorector/{id}",
+    "Method": "GetProrectorByEmail",
+    "RelativePath": "api/Prorector/email/{email}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "email",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

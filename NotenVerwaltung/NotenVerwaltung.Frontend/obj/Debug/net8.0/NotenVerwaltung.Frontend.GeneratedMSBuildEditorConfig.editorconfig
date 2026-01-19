@@ -28,16 +28,20 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glebe/source/repos/P0keda/NotenVerwaltungM431/NotenVerwaltung/NotenVerwaltung.Frontend/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/Users/glebe/source/repos/P0keda/NotenVerwaltungM431/NotenVerwaltung/NotenVerwaltung.Frontend/Pages/CreateRequests.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlUmVxdWVzdHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glebe/source/repos/P0keda/NotenVerwaltungM431/NotenVerwaltung/NotenVerwaltung.Frontend/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+[C:/Users/glebe/source/repos/P0keda/NotenVerwaltungM431/NotenVerwaltung/NotenVerwaltung.Frontend/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glebe/source/repos/P0keda/NotenVerwaltungM431/NotenVerwaltung/NotenVerwaltung.Frontend/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+[C:/Users/glebe/source/repos/P0keda/NotenVerwaltungM431/NotenVerwaltung/NotenVerwaltung.Frontend/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/glebe/source/repos/P0keda/NotenVerwaltungM431/NotenVerwaltung/NotenVerwaltung.Frontend/Pages/RequestDashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVxdWVzdERhc2hib2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/glebe/source/repos/P0keda/NotenVerwaltungM431/NotenVerwaltung/NotenVerwaltung.Frontend/_Imports.razor]

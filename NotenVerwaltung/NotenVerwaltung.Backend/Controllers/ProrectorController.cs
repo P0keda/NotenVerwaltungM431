@@ -26,7 +26,7 @@ public class ProrectorController : ControllerBase
         return _prorectorService.GetProrectorById(id);
     }
 
-    [HttpGet("{email}")]
+    [HttpGet("email/{email}")]
     public ActionResult<ProrectorDTO> GetProrectorByEmail(string email)
     {
         return _prorectorService.GetProrectorByEmail(email);

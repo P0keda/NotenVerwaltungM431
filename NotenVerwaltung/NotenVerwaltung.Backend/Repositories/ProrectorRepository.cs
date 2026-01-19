@@ -21,4 +21,11 @@ public class ProrectorRepository : IProrectorRepository
     {
         return _context.Prorectors.FirstOrDefault(p => p.Email == email);
     }
+
+    public Prorector CreateProrector(Prorector prorector)
+    {
+        _context.Prorectors.Add(prorector);
+        _context.SaveChanges();
+        return prorector;
+    }
 }

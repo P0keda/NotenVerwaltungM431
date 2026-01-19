@@ -1,39 +1,41 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">NotenVerwaltung.Frontend</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+﻿@using NotenVerwaltung.Frontend.Services
+@inject AuthService AuthService
+
+<nav class="custom-sidebar p-3">
+
+    <div class="sidebar-title mb-4 fw-bold text-secondary">
+        Navigation
     </div>
-</div>
 
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
-</div>
+    <NavLink class="nav-item-link" href="/requests">
+        <i class="bi bi-list-task"></i> Anträge
+    </NavLink>
 
-@code {
-    private bool collapseNavMenu = true;
+    <NavLink class="nav-item-link" href="/history">
+        <i class="bi bi-clock-history"></i> Verlauf
+    </NavLink>
 
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+</nav>
 
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
+<style>
+    .custom-sidebar {
+        width: 220px;
+        background: #f1f3f5;
+        border-right: 1px solid #ddd;
+        height: 100vh;
     }
-}
+
+    .nav-item-link {
+        display: block;
+        padding: 10px 12px;
+        margin-bottom: 6px;
+        border-radius: 6px;
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+        .nav-item-link:hover {
+            background: #e9ecef;
+        }
+</style>

@@ -9,4 +9,5 @@ public interface ITeacherRepository
     public Teacher GetTeacherById(int id);
 
     public Teacher GetTeacherByEmail(string email);
+    public Teacher CreateTeacher(Teacher teacher);
 }

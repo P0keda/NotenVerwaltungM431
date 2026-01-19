@@ -23,4 +23,11 @@ public class TeacherRepository : ITeacherRepository
     {
         return _context.Teachers.FirstOrDefault(t => t.Email == email);
     }
+
+    public Teacher CreateTeacher(Teacher teacher)
+    {
+        _context.Teachers.Add(teacher);
+        _context.SaveChanges();
+        return teacher;
+    }
 }

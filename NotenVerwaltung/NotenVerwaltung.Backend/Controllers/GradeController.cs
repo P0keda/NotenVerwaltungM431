@@ -26,15 +26,23 @@ public class GradeController : ControllerBase
         return _gradeService.GetGradeById(id);
     }
 
-    [HttpGet("{studentId}")]
+    [HttpGet("student/{studentId}")]
     public ActionResult<List<GradeDTO>> GetGradeByStudentId(int studentId)
     {
         return _gradeService.GetGradeByStudentId(studentId);
     }
 
-    [HttpGet("{studentId}")]
-    public ActionResult<List<GradeDTO>> GetGradeByStudentIdAndSubjectID(int studentId, int subjectId)
+    [HttpPut("{id}")]
+    public ActionResult UpdateGrade(UpdateGradeDTO updateGradeDTO, int id)
     {
-        return _gradeService.GetGradeByStudentIdAndSubjectId(studentId, subjectId);
+        GradeDTO gradeDTO = _gradeService.UpdateGrade(updateGradeDTO, id);
+        if (gradeDTO == null)
+        {
+            return BadRequest();
+        }
+        gradeDTO.GradeValue = updateGradeDTO.GradeValue;
+        gradeDTO.Comment = updateGradeDTO.Comment;
+
+        return Ok(gradeDTO);
     }
 }

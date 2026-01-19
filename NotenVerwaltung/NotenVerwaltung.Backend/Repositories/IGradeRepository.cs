@@ -9,4 +9,5 @@ public interface IGradeRepository
 
     public List<Grade> GetGradeByStudentId(int id);
     public List<Grade> GetGradeByStudentIdAndSubject(int studentId, int subjectId);
+    public Grade UpdateGrade(Grade updatedGrade, int id);
 }

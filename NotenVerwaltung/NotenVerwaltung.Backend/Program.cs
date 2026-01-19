@@ -37,6 +37,7 @@ namespace NotenVerwaltung.Backend
             builder.Services.AddScoped<IGradeService, GradeService>();
             builder.Services.AddScoped<IChangeRequestRepository, ChangeRequestRepository>();
             builder.Services.AddScoped<IChangeRequestService, ChangeRequestService>();
+            builder.Services.AddScoped<IAuthService, AuthService>();
             var app = builder.Build();
 
 

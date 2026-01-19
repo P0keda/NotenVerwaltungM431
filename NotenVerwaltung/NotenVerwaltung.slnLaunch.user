@@ -5,6 +5,10 @@
       {
         "Path": "NotenVerwaltung.Backend\\NotenVerwaltung.Backend.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "NotenVerwaltung.Frontend\\NotenVerwaltung.Frontend.csproj",
+        "Action": "Start"
       }
     ]
   }

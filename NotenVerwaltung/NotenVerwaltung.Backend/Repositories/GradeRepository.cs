@@ -28,4 +28,17 @@ public class GradeRepository : IGradeRepository
     {
         return _context.Grades.Where(g => g.StudentId == StudentId && g.SubjectId == subjectId).ToList();
     }
+
+    public Grade UpdateGrade(Grade updatedGrade, int id)
+    {
+        Grade existingGrade = _context.Grades.FirstOrDefault(g => g.Id == id);
+        if (existingGrade == null)
+        {
+            return null;
+        }
+        existingGrade.Comment = updatedGrade.Comment;
+        existingGrade.GradeValue = updatedGrade.GradeValue;
+        _context.SaveChanges();
+        return existingGrade;
+    }
 }
