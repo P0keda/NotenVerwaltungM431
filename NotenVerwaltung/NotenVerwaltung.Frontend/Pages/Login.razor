@@ -1,8 +1,10 @@
 ﻿@page "/"
 @using NotenVerwaltung.Frontend.Services
-@inject AuthService AuthService
+@inject IAuthService AuthService
 @inject NavigationManager Nav
-@inject LocalStorageService Storage   
+@using NotenVerwaltung.Shared.DTOs
+@inject IAuthService AuthService
+@inject NavigationManager Nav
 
 <div class="login-wrapper">
     <div class="login-container">
@@ -15,7 +17,8 @@
 
         <div class="login-card">
 
-            <EditForm Model="@loginModel" OnValidSubmit="HandleLogin">
+            <EditForm Model="@loginDto" OnValidSubmit="LoginSubmit">
+                <DataAnnotationsValidator />
 
                 @if (!string.IsNullOrEmpty(errorMessage))
                 {
@@ -28,7 +31,8 @@
                     <label class="form-label">E-Mail Adresse</label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                        <InputText @bind-Value="loginModel.Email" class="form-control" placeholder="beispiel@gibz.ch" />
+                        <InputText @bind-Value="loginDto.Email" class="form-control" placeholder="beispiel.beispiel@gibz.ch" />
+                        <ValidationMessage For="@(() => loginDto.Email)" class="text-danger small" />
                     </div>
                 </div>
 
@@ -36,7 +40,8 @@
                     <label class="form-label">Passwort</label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                        <InputText @bind-Value="loginModel.Password" type="password" class="form-control" placeholder="••••••••" />
+                        <InputText @bind-Value="loginDto.Password" type="password" class="form-control" placeholder="••••••••" />
+                        <ValidationMessage For="@(() => loginDto.Password)" class="text-danger small" />
                     </div>
                 </div>
 
@@ -60,42 +65,23 @@
 </div>
 
 @code {
-    private LoginModel loginModel = new();
+    private LoginUserDTO loginDto = new();
     private string? errorMessage;
+    public string Role;
 
-    private async Task HandleLogin()
+    private async Task LoginSubmit()
     {
         errorMessage = null;
 
-        var savedUser = await Storage.GetItemAsync<StoredUser>("user");
-
-        if (savedUser == null)
-        {
-            errorMessage = "Es ist kein Benutzer registriert.";
-            return;
-        }
-
-        if (savedUser.Email == loginModel.Email &&
-            savedUser.Password == loginModel.Password)
+        bool isSuccess = await AuthService.LoginAsync(loginDto);
+        if (isSuccess)
         {
             Nav.NavigateTo("/requests");
         }
         else
         {
-            errorMessage = "E-Mail oder Passwort ist ungültig.";
+            errorMessage = "Es ist kein Benutzer registriert oder E-Mail oder Passwort ist ungültig.";
+            return;
         }
-    }
-
-    public class LoginModel
-    {
-        public string Email { get; set; } = "";
-        public string Password { get; set; } = "";
-    }
-
-    public class StoredUser
-    {
-        public string FullName { get; set; } = "";
-        public string Email { get; set; } = "";
-        public string Password { get; set; } = "";
     }
 }

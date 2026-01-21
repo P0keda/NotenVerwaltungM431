@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NotenVerwaltung.Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+106a16a2492669f479fabb69eccba8b01659100a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b86b3c91364dbcb8b3edeb7c35563bbda974e78")]
 [assembly: System.Reflection.AssemblyProductAttribute("NotenVerwaltung.Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NotenVerwaltung.Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

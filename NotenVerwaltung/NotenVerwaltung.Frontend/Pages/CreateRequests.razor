@@ -1,108 +1,143 @@
 ﻿@page "/createRequests"
-@using NotenVerwaltung.Frontend.Models
+@using NotenVerwaltung.Shared.DTOs
+@inject IMarkAdjustmentService MarkAdjustmentService
+@inject IStudentService StudentService
+@inject ISubjectService SubjectService
+@inject ITeacherService TeacherService
+@inject IProrectorService ProrectorService
+@inject IMarkService MarkService
+@inject IAuthService AuthService
 @inject NavigationManager Nav
-@inject RequestService RequestService
-@using System.ComponentModel.DataAnnotations
 
 <div class="container mt-4 mb-5">
 
     <h2 class="mb-2 fw-bold text-primary">Neuer Antrag</h2>
     <p class="mb-4 text-muted">Antrag zur Anpassung einer Zeugnisnote</p>
 
-    <EditForm Model="@request" OnValidSubmit="HandleSubmit">
+    <EditForm Model="@request" OnValidSubmit="Submit">
         <DataAnnotationsValidator />
-        <ValidationSummary />
 
         <div class="d-flex flex-column gap-4">
 
-            <div>
-                <label class="form-label">Name der Lehrkraft</label>
-                <InputText class="form-control" @bind-Value="request.TeacherName" />
-                <ValidationMessage For="@(() => request.TeacherName)" />
-            </div>
+            @if (AuthService.Role == "Teacher")
+            {
 
-            <div>
-                <label class="form-label">Name des Schülers / der Schülerin</label>
-                <InputText class="form-control" @bind-Value="request.StudentName" />
-                <ValidationMessage For="@(() => request.StudentName)" />
-            </div>
-
-            <div>
-                <label class="form-label">Name des Prorektors / der Prorektorin</label>
-                <InputText class="form-control" @bind-Value="request.ProrectorName" />
-                <ValidationMessage For="@(() => request.ProrectorName)" />
-            </div>
-
-            <div>
-                <label class="form-label">Fach</label>
-                <InputText class="form-control" @bind-Value="request.Subject" />
-                <ValidationMessage For="@(() => request.Subject)" />
-            </div>
-
-            <!-- Noten nebeneinander -->
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <label class="form-label">Aktuelle Note</label>
-                    <InputSelect class="form-select" @bind-Value="request.CurrentGrade">
+                <div>
+                    <label class="form-label">Name des Schülers / der Schülerin</label>
+                    <InputSelect class="form-select" @bind-Value="StudentId">
                         <option value="">Auswählen</option>
-                        @foreach (var grade in Grades)
+                        @foreach (var student in students)
                         {
-                            <option value="@grade">@grade</option>
+                            <option value="@student.Id">@student.Name</option>
                         }
                     </InputSelect>
-                    <ValidationMessage For="@(() => request.CurrentGrade)" />
                 </div>
 
-                <div class="col-md-6">
-                    <label class="form-label">Beantragte Note</label>
-                    <InputSelect class="form-select" @bind-Value="request.RequestedGrade">
+                <div>
+                    <label class="form-label">Name des Prorektors / der Prorektorin</label>
+                    <InputSelect class="form-select" @bind-Value="request.ProrectorId">
                         <option value="">Auswählen</option>
-                        @foreach (var grade in Grades)
+                        @foreach (var prorector in prorectors)
                         {
-                            <option value="@grade">@grade</option>
+                            <option value="@prorector.Id">@prorector.Name , @prorector.Department</option>
                         }
                     </InputSelect>
-                    <ValidationMessage For="@(() => request.RequestedGrade)" />
                 </div>
-            </div>
 
-            <div>
-                <label class="form-label">Begründung</label>
-                <InputTextArea class="form-control" rows="4" @bind-Value="request.Justification" />
-                <ValidationMessage For="@(() => request.Justification)" />
-            </div>
+                <div>
+                    <label class="form-label">Fach</label>
+                    <InputSelect class="form-select" @bind-Value="SubjectId">
+                        <option value="">Auswählen</option>
+                        @foreach (SubjectDTO subject in subjects)
+                        {
+                            if (subject.ProrectorId == request.ProrectorId)
+                            {
+                                <option value="@subject.Id">@subject.SubjectName</option>
+                            }
+                        }
+                    </InputSelect>
+                </div>
 
-            <!-- Buttons -->
-            <div class="d-flex justify-content-between mt-4">
-                <button class="btn btn-outline-secondary" @onclick="GoBack">
-                    ← Zurück zum Dashboard
-                </button>
+                <!-- Noten nebeneinander -->
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Aktuelle Note</label>
+                        <InputSelect class="form-select" @bind-Value="request.GradeId">
+                            <option value="">Auswählen</option>
+                            @foreach (GradeDTO grade in grades)
+                            {
+                                if (@grade.TeacherId == request.TeacherId && @grade.StudentId == @StudentId && @grade.SubjectId == SubjectId && @grade.Subject.ProrectorId == request.ProrectorId)
+                                {
+                                    <option value="@grade.Id">@grade.GradeValue, @grade.Date</option>
+                                }
+                            }
+                        </InputSelect>
+                    </div>
 
-                <button type="submit" class="btn btn-primary">
-                    Antrag senden
-                </button>
-            </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Beantragte Note</label>
+                        <InputSelect class="form-select" @bind-Value="request.RequestedValue">
+                            <option value="">Auswählen</option>
+                            @foreach (string grade in Grades)
+                            {
+                                <option value="@grade">@grade</option>
+                            }
+                        </InputSelect>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="form-label">Begründung</label>
+                    <InputTextArea class="form-control" rows="4" @bind-Value="request.Reason" />
+                    <ValidationMessage For="@(() => request.Reason)" />
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex justify-content-between mt-4">
+                    <button class="btn btn-outline-secondary" @onclick="GoBack">
+                        ← Zurück zum Dashboard
+                    </button>
+
+                    <button type="submit" class="btn btn-primary">
+                        Antrag senden
+                    </button>
+                </div>
+            }
         </div>
     </EditForm>
 </div>
 
 @code {
-    private RequestModel request = new();
+    private CreateChangeRequestDTO request = new();
+    private List<StudentDTO> students = new();
+    private List<TeacherDTO> teachers = new();
+    private List<ProrectorDTO> prorectors = new();
+    private List<GradeDTO> grades = new();
+    private List<SubjectDTO> subjects = new();
 
-    private List<string> Grades = new() { "1", "2", "3", "4", "5", "6" };
+    public int StudentId { get; set; }
+    public int SubjectId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        students = await StudentService.GetAllAsync();
+        teachers = await TeacherService.GetAllTeachersAsync();
+        prorectors = await ProrectorService.GetAllProrectors();
+        grades = await MarkService.GetAllGradesAsync();
+        subjects = await SubjectService.GetAllSubjects();
+        request.TeacherId = teachers.FirstOrDefault(r => r.Email == AuthService.Email).Id;
+    }
+
+    private async Task Submit()
+    {
+        await MarkAdjustmentService.CreateChangeRequest(request);
+        Nav.NavigateTo("/requests");
+    }
+
+    private List<string> Grades = new() { "1", "1.5", "2", "2.5", "3", "3.5", "4", "4.5", "5", "5.5", "6" };
 
     private void GoBack()
     {
-        Nav.NavigateTo("/dashboard");
-    }
-
-    private async Task HandleSubmit()
-    {
-        request.Status = "Pending";
-        request.CreatedAt = DateTime.Now;
-
-        await RequestService.AddRequest(request);
-
         Nav.NavigateTo("/requests");
     }
 }

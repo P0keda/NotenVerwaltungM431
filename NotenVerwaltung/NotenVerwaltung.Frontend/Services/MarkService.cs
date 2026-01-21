@@ -1,23 +1,38 @@
-﻿using NotenVerwaltung.Frontend.DTOs;
+﻿using NotenVerwaltung.Shared.DTOs;
+using System.Net.Http.Json;
+using static System.Net.WebRequestMethods;
 
 namespace NotenVerwaltung.Frontend.Services
 {
-    public class MarkService
+    public class MarkService : IMarkService
     {
-        private List<MarkAdjustmentDTO> _adjustments = new();
-        private int _nextId = 1;
+        private readonly HttpClient _http;
 
-        public async Task<List<MarkAdjustmentDTO>> GetAdjustmentsAsync()
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MarkService"/> class.
+        /// </summary>
+        /// <param name="http">The HTTP.</param>
+        public MarkService(HttpClient http)
         {
-            await Task.Delay(200);
-            return _adjustments.OrderByDescending(a => a.RequestDate).ToList();
+            _http = http;
         }
 
-        public async Task AddAdjustmentAsync(MarkAdjustmentDTO adjustment)
+        /// <inheritdoc />
+        public async Task<List<GradeDTO>> GetAllGradesAsync()
         {
-            await Task.Delay(200);
-            adjustment.Id = _nextId++;
-            _adjustments.Add(adjustment);
+            return await _http.GetFromJsonAsync<List<GradeDTO>>("Grade");
+        }
+
+        /// <inheritdoc />
+        public async Task<GradeDTO> GetGradeById(int id)
+        {
+            return await _http.GetFromJsonAsync<GradeDTO>($"Grade/{id}");
+        }
+
+        /// <inheritdoc />
+        public async Task<List<GradeDTO>> GetGradesByStudentIdAsync(int studentId)
+        {
+            return await _http.GetFromJsonAsync<List<GradeDTO>>($"Grade/student/{studentId}");
         }
     }
 }

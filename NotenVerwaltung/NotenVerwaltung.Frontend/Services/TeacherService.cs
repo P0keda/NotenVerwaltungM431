@@ -1,40 +1,34 @@
-﻿using NotenVerwaltung.Frontend.DTOs;
+﻿using NotenVerwaltung.Shared.DTOs;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Json;
 using System.Threading.Tasks;
 
-namespace NotenVerwaltung.Frontend.Services
+namespace NotenVerwaltung.Frontend.Services;
+
+
+public class TeacherService : ITeacherService
 {
-    public class TeacherService : ITeacherService
+    private readonly HttpClient _http;
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="TeacherService"/> class.
+    /// </summary>
+    /// <param name="http">The HTTP.</param>
+    public TeacherService(HttpClient http)
     {
-        // Beispiel-Daten für die Simulation
-        private List<TeacherDTO> _teachers = new()
-        {
-            new TeacherDTO { Id = 1, FirstName = "Hans", LastName = "Müller", Email = "hans.mueller@gibz.ch" },
-            new TeacherDTO { Id = 2, FirstName = "Sarah", LastName = "Meier", Email = "sarah.meier@gibz.ch" },
-            new TeacherDTO { Id = 3, FirstName = "Beat", LastName = "Zgraggen", Email = "beat.zgraggen@gibz.ch" }
-        };
+        _http = http;
+    }
 
-        private int _nextId = 4;
+    /// <inheritdoc />
+    public async Task<List<TeacherDTO>> GetAllTeachersAsync()
+    {
+        return await _http.GetFromJsonAsync<List<TeacherDTO>>("Teacher");
+    }
 
-        public async Task<IEnumerable<TeacherDTO>> GetAllTeachersAsync()
-        {
-            await Task.Delay(200); // Simuliert Netzwerk-Verzögerung
-            return _teachers;
-        }
-
-        public async Task<TeacherDTO?> GetTeacherByIdAsync(int id)
-        {
-            await Task.Delay(100);
-            return _teachers.FirstOrDefault(t => t.Id == id);
-        }
-
-        public async Task<TeacherDTO> CreateTeacherAsync(TeacherDTO teacherDto)
-        {
-            await Task.Delay(300);
-            teacherDto.Id = _nextId++;
-            _teachers.Add(teacherDto);
-            return teacherDto;
-        }
+    /// <inheritdoc />
+    public async Task<TeacherDTO?> GetTeacherByIdAsync(int id)
+    {
+        return await _http.GetFromJsonAsync<TeacherDTO>($"Teacher/{id}");
     }
 }

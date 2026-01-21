@@ -12,6 +12,14 @@ public class GradeService : IGradeService
     private readonly IProrectorRepository _prorectorRepository;
     private readonly IGradeRepository _gradeRepository;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="GradeService"/> class.
+    /// </summary>
+    /// <param name="subjectRepository">The subject repository.</param>
+    /// <param name="teacherRepository">The teacher repository.</param>
+    /// <param name="studentRepository">The student repository.</param>
+    /// <param name="prorectorRepository">The prorector repository.</param>
+    /// <param name="gradeRepository">The grade repository.</param>
     public GradeService(ISubjectRepository subjectRepository, ITeacherRepository teacherRepository,IStudentRepository studentRepository, IProrectorRepository prorectorRepository, IGradeRepository gradeRepository)
     {
         _subjectRepository = subjectRepository;
@@ -20,6 +28,8 @@ public class GradeService : IGradeService
         _prorectorRepository = prorectorRepository;
         _gradeRepository = gradeRepository;
     }
+
+    /// <inheritdoc />
     public List<GradeDTO> GetAllGrades()
     {
         List<Grade> GradesRepository = _gradeRepository.GetAllGrades();
@@ -33,6 +43,7 @@ public class GradeService : IGradeService
         return GradesToReturn;
     }
 
+    /// <inheritdoc />
     public GradeDTO GetGradeById(int id)
     {
         Grade grade = _gradeRepository.GetGradeById(id);
@@ -60,7 +71,6 @@ public class GradeService : IGradeService
                     Id = subject.TeacherId,
                     Name = teacher.FullName,
                     Email = teacher.Email,
-                    Password = teacher.Password
                 },
                 SubjectId = subject.Id,
                 Subject = new SubjectDTO
@@ -74,13 +84,13 @@ public class GradeService : IGradeService
                         Email = prorector.Email,
                         Department = prorector.Department,
                         Name = prorector.fullName,
-                        Password = prorector.Password
                     }
                 },
             };
         return gradeDTO;
     }
 
+    /// <inheritdoc />
     public List<GradeDTO> GetGradeByStudentId(int id)
     {
         List<Grade> GradesRepository = _gradeRepository.GetGradeByStudentId(id);
@@ -94,6 +104,7 @@ public class GradeService : IGradeService
         return GradesToReturn;
     }
 
+    /// <inheritdoc />
     public List<GradeDTO> GetGradeByStudentIdAndSubjectId(int studentId, int SubjectId)
     {
         List<Grade> GradesRepository = _gradeRepository.GetGradeByStudentIdAndSubject(studentId, SubjectId);
@@ -107,6 +118,7 @@ public class GradeService : IGradeService
         return GradesToReturn;
     }
 
+    /// <inheritdoc />
     public GradeDTO UpdateGrade(UpdateGradeDTO updateGradeDTO, int id)
     {
         Grade grade = _gradeRepository.GetGradeById(id);

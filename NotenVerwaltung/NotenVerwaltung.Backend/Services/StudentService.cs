@@ -8,11 +8,16 @@ public class StudentService : IStudentService
 {
     private readonly IStudentRepository _studentRepository;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="StudentService"/> class.
+    /// </summary>
+    /// <param name="studentRepository">The student repository.</param>
     public StudentService(IStudentRepository studentRepository)
     {
         _studentRepository = studentRepository;
     }
 
+    /// <inheritdoc />
     public List<StudentDTO> GetAllStudents()
     {
         List<Student> students = _studentRepository.GetAllStudents();
@@ -27,6 +32,7 @@ public class StudentService : IStudentService
         return StudentsToReturn;
     }
 
+    /// <inheritdoc />
     public StudentDTO GetStudentById(int id)
     {
         Student student = _studentRepository.GetStudentById(id);

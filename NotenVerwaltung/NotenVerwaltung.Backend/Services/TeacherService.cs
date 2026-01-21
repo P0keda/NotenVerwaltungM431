@@ -8,10 +8,16 @@ public class TeacherService : ITeacherService
 {
     private readonly ITeacherRepository _teacherRepository;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="TeacherService"/> class.
+    /// </summary>
+    /// <param name="teacherRepository">The teacher repository.</param>
     public TeacherService(ITeacherRepository teacherRepository)
     {
         _teacherRepository = teacherRepository;
     }
+
+    /// <inheritdoc />
     public List<TeacherDTO> GetAllTeachers()
     {
         IEnumerable<Teacher> TeachersFromDb = _teacherRepository.GetAllTeachers();
@@ -25,6 +31,7 @@ public class TeacherService : ITeacherService
         return TeachersToReturn;
     }
 
+    /// <inheritdoc />
     public TeacherDTO GetTeacherById(int id)
     {
         Teacher teacher = _teacherRepository.GetTeacherById(id);
@@ -34,11 +41,11 @@ public class TeacherService : ITeacherService
             Id = teacher.Id,
             Name = teacher.FullName,
             Email = teacher.Email,
-            Password = teacher.Password
         };
-
         return teacherDTO;
     }
+
+    /// <inheritdoc />
     public TeacherDTO GetTeacherByEmail(string email)
     {
         Teacher teacher = _teacherRepository.GetTeacherByEmail(email);
@@ -48,9 +55,7 @@ public class TeacherService : ITeacherService
             Id = teacher.Id,
             Name = teacher.FullName,
             Email = teacher.Email,
-            Password = teacher.Password
         };
-
         return teacherDTO;
     }
 }

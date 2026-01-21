@@ -25,6 +25,17 @@ namespace NotenVerwaltung.Backend
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
             });
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin", policy =>
+                {
+                    policy.WithOrigins("https://localhost:7029")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod()
+                          .AllowCredentials();
+                });
+            });
+
             builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
             builder.Services.AddScoped<ITeacherService, TeacherService>();
             builder.Services.AddScoped<ISubjectService, SubjectService>();
@@ -38,9 +49,9 @@ namespace NotenVerwaltung.Backend
             builder.Services.AddScoped<IChangeRequestRepository, ChangeRequestRepository>();
             builder.Services.AddScoped<IChangeRequestService, ChangeRequestService>();
             builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IEmailService, EmailService>();
+
             var app = builder.Build();
-
-
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -48,6 +59,7 @@ namespace NotenVerwaltung.Backend
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseCors("AllowSpecificOrigin");
 
             app.UseHttpsRedirection();
 

@@ -9,12 +9,18 @@ public class AuthService : IAuthService
     private readonly ITeacherRepository _teacherRepository;
     private readonly IProrectorRepository _prorectorRepository;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="IAuthService"/> class.
+    /// </summary>
+    /// <param name="teacherRepository"></param>
+    /// <param name="prorectorRepository"></param>
     public AuthService(ITeacherRepository teacherRepository, IProrectorRepository prorectorRepository)
     {
         _teacherRepository = teacherRepository;
         _prorectorRepository = prorectorRepository;
     }
 
+    /// <inheritdoc />
     public object Register(RegisterUserDTO registerUserDTO)
     {
         if (registerUserDTO.Email.EndsWith("@gibz.ch"))
@@ -28,9 +34,11 @@ public class AuthService : IAuthService
             Teacher teacher = new Teacher
             {
                 FullName = registerUserDTO.FullName,
-                Email = registerUserDTO.Email,
-                Password = registerUserDTO.Password
+                Email = registerUserDTO.Email
             };
+            PasswordHasher.CreatePasswordHash(registerUserDTO.Password, out byte[] passwordHash, out byte[] passwordSalt);
+            teacher.PasswordHash = passwordHash;
+            teacher.PasswordSalt = passwordSalt;
 
             _teacherRepository.CreateTeacher(teacher);
 
@@ -49,13 +57,16 @@ public class AuthService : IAuthService
                 throw new Exception("There is already prorector with this email");
             }
 
-            var prorector = new Prorector
+            Prorector prorector = new Prorector
             {
                 fullName = registerUserDTO.FullName,
                 Email = registerUserDTO.Email,
-                Password = registerUserDTO.Password,
                 Department = "not defined"
             };
+
+            PasswordHasher.CreatePasswordHash(registerUserDTO.Password, out byte[] passwordHash, out byte[] passwordSalt);
+            prorector.PasswordHash = passwordHash;
+            prorector.PasswordSalt = passwordSalt;
 
             _prorectorRepository.CreateProrector(prorector);
 
@@ -72,12 +83,14 @@ public class AuthService : IAuthService
             throw new Exception("incorrect email domain");
         }
     }
+
+    /// <inheritdoc />
     public object Login(LoginUserDTO loginUserDTO)
     {
         Teacher teacher = _teacherRepository.GetTeacherByEmail(loginUserDTO.Email);
         if (teacher != null)
         {
-            if (teacher.Password != loginUserDTO.Password)
+            if (!PasswordHasher.VerifyPassword(loginUserDTO.Password, teacher.PasswordHash, teacher.PasswordSalt))
             {
                 throw new Exception("Email or Passwort are incorrect");
             }
@@ -93,7 +106,7 @@ public class AuthService : IAuthService
         Prorector prorector = _prorectorRepository.GetProrectorByEmail(loginUserDTO.Email);
         if (prorector != null)
         {
-            if (prorector.Password != loginUserDTO.Password)
+            if (!PasswordHasher.VerifyPassword(loginUserDTO.Password, prorector.PasswordHash, prorector.PasswordSalt))
             {
                 throw new Exception("Email or Passwort are incorrect");
             }

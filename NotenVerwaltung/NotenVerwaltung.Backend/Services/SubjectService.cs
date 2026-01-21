@@ -10,12 +10,20 @@ public class SubjectService : ISubjectService
     private readonly ITeacherRepository _teacherRepository;
     private readonly IProrectorRepository _prorectorRepository;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="SubjectService"/> class.
+    /// </summary>
+    /// <param name="subjectRepository">The subject repository.</param>
+    /// <param name="teacherRepository">The teacher repository.</param>
+    /// <param name="prorectorRepository">The prorector repository.</param>
     public SubjectService(ISubjectRepository subjectRepository, ITeacherRepository teacherRepository, IProrectorRepository prorectorRepository)
     {
         _subjectRepository = subjectRepository;
         _teacherRepository = teacherRepository;
         _prorectorRepository = prorectorRepository;
     }
+
+    /// <inheritdoc />
     public List<SubjectDTO> GetAllSubjects()
     {
         IEnumerable<Subject> SubjectsRepository = _subjectRepository.GetAllSubject();
@@ -35,7 +43,6 @@ public class SubjectService : ISubjectService
                     Id = subject.TeacherId,
                     Name = teacher.FullName,
                     Email = teacher.Email,
-                    Password = teacher.Password
                 },
                 ProrectorId = subject.ProrectorId,
                 Prorector = new ProrectorDTO
@@ -44,7 +51,6 @@ public class SubjectService : ISubjectService
                     Email = prorector.Email,
                     Department = prorector.Department,
                     Name = prorector.fullName,
-                    Password = prorector.Password
                 }
             };
             SubjectsToReturn.Add(subjectDTO);
@@ -52,6 +58,7 @@ public class SubjectService : ISubjectService
         return SubjectsToReturn;
     }
 
+    /// <inheritdoc />
     public SubjectDTO GetSubjectById(int id)
     {
         Subject Subject = _subjectRepository.GetSubjectById(id);
@@ -68,7 +75,6 @@ public class SubjectService : ISubjectService
                     Id = Subject.TeacherId,
                     Name = Teacher.FullName,
                     Email = Teacher.Email,
-                    Password = Teacher.Password
                 },
                 ProrectorId = Subject.ProrectorId,
                 Prorector = new ProrectorDTO
@@ -77,10 +83,8 @@ public class SubjectService : ISubjectService
                     Email = Prorector.Email,
                     Department = Prorector.Department,
                     Name = Prorector.fullName,
-                    Password = Prorector.Password
                 }
         };
-
         return SubjectDTO;
     }
 }

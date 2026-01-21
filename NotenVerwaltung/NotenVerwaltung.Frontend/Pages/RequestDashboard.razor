@@ -1,6 +1,12 @@
 ﻿@page "/requests"
 @inject NavigationManager Nav
-@inject LocalStorageService Storage
+@inject IMarkAdjustmentService MarkAdjustmentService
+@inject IStudentService StudentService
+@inject ISubjectService SubjectService
+@inject ITeacherService TeacherService
+@inject IProrectorService ProrectorService
+@inject IMarkService MarkService
+@inject IAuthService AuthService
 
 <div class="dashboard-container px-4 py-3">
     <h2 class="mb-4">Übersicht Ihrer Notenänderungsanträge</h2>
@@ -9,38 +15,130 @@
 
         <div class="status-card status-total flex-fill text-center">
             <h5>Gesamt</h5>
-            <p class="fs-4 fw-bold">0</p>
+            <p class="fs-4 fw-bold">@requests.Where(r => r.Teacher.Email == AuthService.Email || r.Prorector.Email == AuthService.Email).Count()</p>
         </div>
 
         <div class="status-card status-pending flex-fill text-center">
             <h5>Ausstehend</h5>
-            <p class="fs-4 fw-bold">0</p>
+            <p class="fs-4 fw-bold">@CalculateAusstehend()</p>
         </div>
 
         <div class="status-card status-approved flex-fill text-center">
             <h5>Genehmigt</h5>
-            <p class="fs-4 fw-bold">0</p>
+            <p class="fs-4 fw-bold">@CalculateGenehmigt()</p>
         </div>
 
         <div class="status-card status-rejected flex-fill text-center">
             <h5>Abgelehnt</h5>
-            <p class="fs-4 fw-bold">0</p>
+            <p class="fs-4 fw-bold">@CalculateAbgelehnt()</p>
         </div>
 
     </div>
-
-    <div class="d-flex justify-content-end mb-3">
-        <button class="btn btn-primary" @onclick="NeuerAntrag">
-            + Neuer Antrag
-        </button>
-    </div>
-
-    <div class="antragsliste bg-white border rounded p-4">
-        <h4 class="mb-3">Alle Anträge</h4>
-        <div class="text-muted">
-            Noch keine Anträge vorhanden. Erstellen Sie Ihren ersten Antrag mit dem Button oben.
+    @if (AuthService.Role == "Teacher")
+    {   
+        <div class="d-flex justify-content-end mb-3">
+            <button class="btn btn-primary" @onclick="NeuerAntrag">
+                + Neuer Antrag
+            </button>
         </div>
-    </div>
+    }
+
+    @if (requests.Where(r => r.Teacher.Email == AuthService.Email || r.Prorector.Email == AuthService.Email).Count() > 0)
+    {
+        <div class="card shadow-sm">
+            <div class="card-header bg-light fw-bold">
+                Alle Anträge
+            </div>
+
+            <div class="card-body">
+
+
+                @foreach (ChangeRequestDTO changeRequestDTO in requests)
+                {
+                    if (changeRequestDTO.Teacher.Email == AuthService.Email || changeRequestDTO.Prorector.Email == AuthService.Email)
+                    {
+
+                        <div class="border rounded p-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <div class="fw-bold">
+                                    @changeRequestDTO.Teacher.Name · @changeRequestDTO.Grade.Subject.SubjectName
+                                </div>
+
+                                <span class="@GetStatusBadge(changeRequestDTO.Status)">
+                                    @GetStatusText(changeRequestDTO.Status)
+                                </span>
+                            </div>
+
+                            <div class="text-muted small mb-2">
+                                @changeRequestDTO.Grade.Student.Name · @changeRequestDTO.RequestedDate
+                            </div>
+
+                            <!-- GRADES -->
+                            <div class="mb-2">
+                                Aktuelle Note:
+                                <span class="badge bg-light text-dark border">@changeRequestDTO.Grade.GradeValue</span>
+                                →
+                                Beantragte Note:
+                                <span class="badge bg-light text-dark border">@changeRequestDTO.RequestedValue</span>
+
+                                @if (@changeRequestDTO.Grade.GradeValue < @changeRequestDTO.RequestedValue)
+                                {
+                                    <span class="text-success fw-bold ms-2">
+                                        @((changeRequestDTO.RequestedValue - changeRequestDTO.Grade.GradeValue).ToString("0.0"))
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="text-warning fw-bold ms-2">
+                                        @((changeRequestDTO.RequestedValue - changeRequestDTO.Grade.GradeValue).ToString("0.0"))
+                                    </span>
+                                }
+                            </div>
+
+                            <!-- REASON -->
+                            <div class="mb-3">
+                                <strong>Begründung:</strong> @changeRequestDTO.Reason
+                            </div>
+
+                            <!-- ACTIONS -->
+                            @if (changeRequestDTO.Status == RequestStatus.pending && AuthService.Role == "Prorector")
+                            {
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-success btn-sm"
+                                            @onclick="() => Approve(changeRequestDTO.Id, RequestStatus.approved)">
+                                        Genehmigen
+                                    </button>
+
+                                    <button class="btn btn-danger btn-sm"
+                                            @onclick="() => Reject(changeRequestDTO.Id, RequestStatus.rejected)">
+                                        Ablehnen
+                                    </button>
+                                </div>
+                            }
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="antragsliste bg-white border rounded p-4">
+            <h4 class="mb-3">Alle Anträge</h4>
+            @if (AuthService.Role == "Prorector")
+            {
+                <div class="text-muted">
+                    Noch keine Anträge vorhanden. Warten Sie bitte auf neue Anträge.
+                </div>
+            }
+            else
+            {
+                <div class="text-muted">
+                    Noch keine Anträge vorhanden. Erstellen Sie Ihren ersten Antrag mit dem Button oben.
+                </div>
+            }
+        </div>
+    }
 
     <footer class="text-center mt-5 text-muted small">
         © 2025 GIBZ – Gewerblich-Industrielle Berufsschule Zug ·
@@ -49,15 +147,88 @@
 </div>
 
 @code {
+    private List<ChangeRequestDTO> requests = new();
+    private List<TeacherDTO> teachers = new();
+    private List<SubjectDTO> subjects = new();
+    private List<ProrectorDTO> prorectors = new();
+
     protected override async Task OnInitializedAsync()
     {
-        var user = await Storage.GetItemAsync<StoredUser>("user");
-
-        if (user == null)
-        {
-            Nav.NavigateTo("/", true);
-        }
+        requests = await MarkAdjustmentService.GetAllChangeRequests();
+        teachers = await TeacherService.GetAllTeachersAsync();
+        subjects = await SubjectService.GetAllSubjects();
+        prorectors = await ProrectorService.GetAllProrectors();
     }
+    private int CalculateAusstehend()
+    {
+        int i = 0;
+        foreach (ChangeRequestDTO changeRequestDTO in requests)
+        {
+            if (changeRequestDTO.Status == RequestStatus.pending && (changeRequestDTO.Teacher.Email == AuthService.Email || changeRequestDTO.Prorector.Email == AuthService.Email))
+            {
+                i++;
+            }
+        }
+        return i;
+    }
+    private int CalculateGenehmigt()
+    {
+        int i = 0;
+        foreach (ChangeRequestDTO changeRequestDTO in requests)
+        {
+            if (changeRequestDTO.Status == RequestStatus.approved && (changeRequestDTO.Teacher.Email == AuthService.Email || changeRequestDTO.Prorector.Email == AuthService.Email))
+            {
+                i++;
+            }
+        }
+        return i;
+    }
+    private int CalculateAbgelehnt()
+    {
+        int i = 0;
+        foreach (ChangeRequestDTO changeRequestDTO in requests)
+        {
+            if (changeRequestDTO.Status == RequestStatus.rejected && (changeRequestDTO.Teacher.Email == AuthService.Email || changeRequestDTO.Prorector.Email == AuthService.Email))
+            {
+                i++;
+            }
+        }
+        return i;
+    }
+
+    private async Task Approve(int id, RequestStatus requestStatus)
+    {
+        UpdateChangeRequestDTO updateChangeRequestDTO = new UpdateChangeRequestDTO
+        {
+            Status = requestStatus
+        };
+        await MarkAdjustmentService.UpdateChangeRequestById(updateChangeRequestDTO, id);
+        requests = await MarkAdjustmentService.GetAllChangeRequests();
+    }
+
+    private async Task Reject(int id, RequestStatus requestStatus)
+    {
+        UpdateChangeRequestDTO updateChangeRequestDTO = new UpdateChangeRequestDTO
+        {
+            Status = requestStatus
+        };
+        await MarkAdjustmentService.UpdateChangeRequestById(updateChangeRequestDTO, id);
+        requests = await MarkAdjustmentService.GetAllChangeRequests();
+    }
+
+    private string GetStatusBadge(RequestStatus status) => status switch
+    {
+        RequestStatus.pending => "badge bg-warning text-dark",
+        RequestStatus.approved => "badge bg-success",
+        RequestStatus.rejected => "badge bg-danger",
+    };
+
+    private string GetStatusText(RequestStatus status) => status switch
+    {
+        RequestStatus.pending => "Ausstehend",
+        RequestStatus.approved => "Genehmigt",
+        RequestStatus.rejected => "Abgelehnt",
+    };
 
     private void NeuerAntrag()
     {

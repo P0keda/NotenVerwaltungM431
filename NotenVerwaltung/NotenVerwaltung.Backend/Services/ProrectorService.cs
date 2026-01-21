@@ -8,10 +8,16 @@ public class ProrectorService : IProrectorService
 {
     private readonly IProrectorRepository _prorectorRepository;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ProrectorService"/> class.
+    /// </summary>
+    /// <param name="prorectorRepository">The prorector repository.</param>
     public ProrectorService(IProrectorRepository prorectorRepository)
     {
         _prorectorRepository = prorectorRepository;
     }
+
+    /// <inheritdoc />
     public List<ProrectorDTO> GetAllProrectors()
     {
         List<Prorector> prorectors = _prorectorRepository.GetAllProrectors();
@@ -25,6 +31,8 @@ public class ProrectorService : IProrectorService
         }
         return prorectorsToReturn;
     }
+
+    /// <inheritdoc />
     public ProrectorDTO GetProrectorById(int id)
     {
         Prorector prorector = _prorectorRepository.GetProrectorById(id);
@@ -35,11 +43,12 @@ public class ProrectorService : IProrectorService
             Name = prorector.fullName,
             Department = prorector.Department,
             Email = prorector.Email,
-            Password = prorector.Password
         };
 
         return prorectorDTO;
     }
+
+    /// <inheritdoc />
     public ProrectorDTO GetProrectorByEmail(string email)
     {
         Prorector prorector = _prorectorRepository.GetProrectorByEmail(email);
@@ -49,7 +58,6 @@ public class ProrectorService : IProrectorService
             Name = prorector.fullName,
             Department = prorector.Department,
             Email = prorector.Email,
-            Password = prorector.Password
         };
         return prorectorDTO;
     }

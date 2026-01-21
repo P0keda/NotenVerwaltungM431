@@ -10,11 +10,20 @@ public class AuthController : ControllerBase
 {
     private readonly IAuthService _authService;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="AuthController"/> class.
+    /// </summary>
+    /// <param name="authService">The authentication service.</param>
     public AuthController(IAuthService authService)
     {
         _authService = authService;
     }
 
+    /// <summary>
+    /// Registers the specified register user dto.
+    /// </summary>
+    /// <param name="registerUserDTO">The register user dto.</param>
+    /// <returns>ActionResult<object></returns>
     [HttpPost("register")]
     public ActionResult<object> Register([FromBody] RegisterUserDTO registerUserDTO)
     {
@@ -22,6 +31,11 @@ public class AuthController : ControllerBase
         return Ok(user);
     }
 
+    /// <summary>
+    /// Logins the specified login user dto.
+    /// </summary>
+    /// <param name="loginUserDTO">The login user dto.</param>
+    /// <returns>ActionResult<object></returns>
     [HttpPost("login")]
     public ActionResult<object> Login([FromBody] LoginUserDTO loginUserDTO)
     {

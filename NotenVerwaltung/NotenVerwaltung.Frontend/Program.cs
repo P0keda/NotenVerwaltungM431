@@ -14,22 +14,18 @@ namespace NotenVerwaltung.Frontend
 
             builder.Services.AddScoped(sp => new HttpClient
             {
-                BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
+                BaseAddress = new Uri("https://localhost:7086/api/")
             });
 
-            builder.Services.AddScoped<AuthService>();
-            builder.Services.AddScoped<LocalStorageService>();
-            builder.Services.AddScoped<RequestService>();
-            builder.Services.AddScoped<MarkService>();
+            builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IMarkService, MarkService>();
+            builder.Services.AddScoped<IMarkAdjustmentService, MarkAdjustmentService>();
             builder.Services.AddScoped<ITeacherService, TeacherService>();
+            builder.Services.AddScoped<IProrectorService, ProrectorService>();
+            builder.Services.AddScoped<IStudentService, StudentService>();
+            builder.Services.AddScoped<ISubjectService, SubjectService>();
 
             var host = builder.Build();
-
-            var auth = host.Services.GetRequiredService<AuthService>();
-            await auth.InitializeAsync();
-
-            var req = host.Services.GetRequiredService<RequestService>();
-            await req.InitializeAsync();
 
             await host.RunAsync();
         }

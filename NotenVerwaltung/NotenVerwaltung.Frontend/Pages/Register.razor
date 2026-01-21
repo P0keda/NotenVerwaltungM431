@@ -1,7 +1,7 @@
 ﻿@page "/register"
 @using System.ComponentModel.DataAnnotations
 @inject NavigationManager Nav
-@inject LocalStorageService Storage
+@inject IAuthService AuthService
 
 <div class="login-wrapper">
     <div class="login-container">
@@ -12,43 +12,43 @@
         </div>
 
         <div class="login-card">
-            <EditForm Model="@regModel" OnValidSubmit="HandleRegistration">
+            <EditForm Model="@registerDto" OnValidSubmit="RegisterUser">
                 <DataAnnotationsValidator />
 
                 <div class="form-group mb-3">
                     <label class="form-label">Vollständiger Name</label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-person"></i></span>
-                        <InputText @bind-Value="regModel.FullName" class="form-control" placeholder="Vor- und Nachname" />
+                        <InputText @bind-Value="registerDto.FullName" class="form-control" placeholder="Vor- und Nachname" />
                     </div>
-                    <ValidationMessage For="@(() => regModel.FullName)" class="text-danger small" />
+                    <ValidationMessage For="@(() => registerDto.FullName)" class="text-danger small" />
                 </div>
 
                 <div class="form-group mb-3">
                     <label class="form-label">E-Mail-Adresse</label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                        <InputText @bind-Value="regModel.Email" class="form-control" placeholder="beispiel@gibz.ch" />
+                        <InputText @bind-Value="registerDto.Email" class="form-control" placeholder="beispiel.beispiel@gibz.ch" />
                     </div>
-                    <ValidationMessage For="@(() => regModel.Email)" class="text-danger small" />
+                    <ValidationMessage For="@(() => registerDto.Email)" class="text-danger small" />
                 </div>
 
                 <div class="form-group mb-3">
                     <label class="form-label">Passwort</label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                        <InputText @bind-Value="regModel.Password" type="password" class="form-control" placeholder="Mindestens 6 Zeichen" />
+                        <InputText @bind-Value="registerDto.Password" type="password" class="form-control" placeholder="Mindestens 6 Zeichen" />
                     </div>
-                    <ValidationMessage For="@(() => regModel.Password)" class="text-danger small" />
+                    <ValidationMessage For="@(() => registerDto.Password)" class="text-danger small" />
                 </div>
 
                 <div class="form-group mb-4">
                     <label class="form-label">Passwort bestätigen</label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-shield-check"></i></span>
-                        <InputText @bind-Value="regModel.ConfirmPassword" type="password" class="form-control" placeholder="Passwort wiederholen" />
+                        <InputText @bind-Value="registerDto.ConfirmPassword" type="password" class="form-control" placeholder="Passwort wiederholen" />
                     </div>
-                    <ValidationMessage For="@(() => regModel.ConfirmPassword)" class="text-danger small" />
+                    <ValidationMessage For="@(() => registerDto.ConfirmPassword)" class="text-danger small" />
                 </div>
 
                 <button type="submit" class="btn btn-gibz w-100 mb-3">
@@ -68,40 +68,14 @@
 </div>
 
 @code {
-    private RegisterViewModel regModel = new();
+    private RegisterUserDTO registerDto = new();
 
-    private async Task HandleRegistration()
+    private async Task RegisterUser()
     {
-        var user = new StoredUser
+        var success = await AuthService.RegisterAsync(registerDto);
+        if (success)
         {
-            FullName = regModel.FullName,
-            Email = regModel.Email,
-            Password = regModel.Password
-        };
-
-        await Storage.SetItemAsync("user", user);
-
-        Nav.NavigateTo("/");
-    }
-
-    public class RegisterViewModel
-    {
-        [Required(ErrorMessage = "Der Name ist erforderlich.")]
-        public string FullName { get; set; } = string.Empty;
-
-        [Required(ErrorMessage = "E-Mail ist erforderlich.")]
-        [EmailAddress(ErrorMessage = "Ungültiges E-Mail-Format.")]
-        [RegularExpression(@"^[^@\s]+@gibz\.ch$",
-            ErrorMessage = "Nur E-Mail-Adressen mit @gibz.ch sind erlaubt.")]
-        public string Email { get; set; } = string.Empty;
-
-
-        [Required(ErrorMessage = "Passwort ist erforderlich.")]
-        [MinLength(6, ErrorMessage = "Das Passwort muss mindestens 6 Zeichen lang sein.")]
-        public string Password { get; set; } = string.Empty;
-
-        [Required(ErrorMessage = "Bitte bestätigen Sie Ihr Passwort.")]
-        [Compare(nameof(Password), ErrorMessage = "Die Passwörter stimmen nicht überein.")]
-        public string ConfirmPassword { get; set; } = string.Empty;
+            Nav.NavigateTo("/requests");
+        }
     }
 }

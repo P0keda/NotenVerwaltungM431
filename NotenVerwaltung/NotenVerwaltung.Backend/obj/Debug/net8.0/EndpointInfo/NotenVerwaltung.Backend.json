@@ -924,10 +924,6 @@
             "type": "string",
             "nullable": true
           },
-          "password": {
-            "type": "string",
-            "nullable": true
-          },
           "department": {
             "type": "string",
             "nullable": true
@@ -1035,8 +1031,11 @@
             "type": "string",
             "nullable": true
           },
-          "password": {
-            "type": "string",
+          "subjects": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SubjectDTO"
+            },
             "nullable": true
           }
         },
